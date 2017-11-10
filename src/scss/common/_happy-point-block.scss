@@ -39,7 +39,7 @@
 @mixin happy-point-block-background-image {
   background: url("images/happy-point-block-bg.jpg") center center no-repeat;
   background-size: cover; 
-  height: 620px;
+  height: 640px;
   width: 100%;
   position: relative; 
 }
@@ -84,7 +84,6 @@
     .subscriber-btn {
     margin-top: 0px;
     margin-bottom: 16px;
-    width: 100%;
     padding: 10px;
     }
     p {
@@ -116,7 +115,6 @@
       line-height: 1.75rem;
     }
     .subscriber-btn {
-      width: 100%;
       margin-top: 16px;
       margin-bottom: 16px;
     }
@@ -146,7 +144,6 @@
     .subscriber-btn {
       margin-top: 0px;
       margin-bottom: 16px;
-      width: 100%;
       height: 42px;
       line-height: 42px;
     }
@@ -155,25 +152,30 @@
     }
   }
 }
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   .happy-point-block-wrap {
+    .pt-20 {
+      padding-top: 335px;
+      padding-left: 0;
+      padding-right: 0;
+    }
     @include happy-point-block-background-image;
     @include background-before-opacity(#D6E6F2);
-    .pt-20 {
-      padding-top: 350px;
-    }
     h2 {
       font-size: 2.25rem;
+      font-weight: normal;
+      margin-bottom: rem(20);
     }
     h5 {
       font-size: 1.125rem;
+      margin-bottom: rem(40);
+      font-weight: normal;
     }
     .subscriber-btn {
       margin-top: 0px;
       margin-bottom: 8px;
-      width: 100%;
-      height: 42px;
-      line-height: 42px;
+      height: rem(54);
+      line-height: rem(54);
     }
     p {
       text-align: left;

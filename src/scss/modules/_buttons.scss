@@ -208,5 +208,15 @@ Stylesheet: Button Styles
       height: 56px;
       line-height: 56px;
     }
+
+   &.btn-primary, &.yellow-button {
+     line-height: rem(50);
+     padding: 0 50px;
+   }
+
+   &.secondary-button {
+     line-height: rem(50);
+     padding: 0 30px;
+   }
   }
 }

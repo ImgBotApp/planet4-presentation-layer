@@ -36,12 +36,11 @@
     }
   }
   .top-tags-wrap {
-    span {
-      color: $percentage-text;
-      font-size: 15px;
-    }
+    font-size: rem(20);
+    line-height: rem(26);
+    color: $blue-heading;
+
     .category-topic-title {
-      font-size: 1rem;
       font-weight: bold;
       margin-right: 5px;
     }
@@ -49,7 +48,7 @@
       background: $percentage-text;
       width: 5px;
       height: 5px;
-      display: inline-block;;
+      display: inline-block;
       border-radius: 5px;
       vertical-align: middle;
       margin-right: 5px;
@@ -132,7 +131,7 @@
 }
 .what-you-can-do-wrapper {
   background: $container-bg;
-  h3 {
+  h2 {
     padding: 50px 0 0;
     color: $blue-heading;
   }
@@ -164,10 +163,11 @@
         font-size : 22px;
         line-height : normal;
         font-weight: 500;
-        color : $steps-deactive-text;
+        color: $blue-heading;
         padding: 20px 0 0 0;
       }
       p {
+        font-family: $roboto;
         color: $blue-text;
         font-size: 14px;
         opacity: 0.75;
@@ -203,9 +203,6 @@
         color: $active;
       }
       .step-info {
-        h5 {
-          color : $darkb-blue-text;
-        }
         p {
           color: $blue-text;
         }
@@ -213,22 +210,6 @@
     }
   }
 }
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .can-do-steps {
-    @include clearfix;
-    margin-top: 35px;
-    .step-info-wrap {
-      .step-number {
-        width: 97px;
-        height: 97px;
-        line-height: 97px;
-        font-size: 54px;
-        float: left;
-      }
-    }
-  }
- }
  .can-do-steps-mobile {
     .card {
       background: none;
@@ -238,8 +219,6 @@
     }
  }
 
- 
- 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) {
   .hero-img-wrap {
@@ -398,12 +377,6 @@
           margin-top: 20px;
           border: 0;
           padding-top: 0;
-          div {
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin-right: -200px;
-          }
         }  
       }
     }
@@ -587,7 +560,6 @@
           font-size : 22px;
           line-height : normal;
           font-weight: 500;
-          color : $steps-deactive-text;
           padding: 20px 0 0 0;
         }
         p {
@@ -607,9 +579,6 @@
           margin-left: 0;
           width: auto;
           position: relative;
-          div {
-            position: relative;
-          }
         }
       }
       &:hover {
@@ -625,9 +594,6 @@
           color: $active;
         }
         .step-info {
-          h5 {
-            color : $darkb-blue-text;
-          }
           p {
             color: $blue-text;
           }
@@ -639,10 +605,62 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .page-content-wrap {
+    padding-top: 200px;
+    .about-info {
+      margin-bottom: rem(72);
+      p {
+        font-size: rem(22);
+        line-height: rem(38);
+        color: $dark-para-text;
+      }
+    }
+
+  }
+
+  .what-you-can-do-wrapper  {
+    margin-bottom: 120px;
+    p {
+      font-size: rem(22);
+      line-height: rem(38);
+      color: $dark-para-text;
+    }
+  }
+
   .hero-img-wrap {
     background-image: url("images/clouds_1200.png");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
+  }
+  .can-do-steps {
+    @include clearfix;
+    margin-top: 35px;
+    .step-info-wrap {
+      .step-number {
+        width: rem(126);
+        height: rem(126);
+        font-size: rem(70);
+        float: left;
+      }
+
+      .step-info {
+        .steps-action {
+          margin-top: rem(54);
+        }
+
+        p {
+          font-size: rem(20);
+          line-height: rem(30);
+        }
+
+        h5 {
+          font-size: rem(24);
+          line-height: rem(31.2);
+          margin-bottom: rem(7);
+        }
+      }
+    }
+
   }
 }
