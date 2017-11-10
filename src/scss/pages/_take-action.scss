@@ -66,6 +66,7 @@
   }
   .home-page-carousel-wrap {
     .carousel-caption {
+      font-family: $roboto;
       text-align: left;
       left: auto;
       bottom: 0;
@@ -80,6 +81,11 @@
       -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351', endColorstr='#0A3351' ,GradientType=0)";
       background : linear-gradient(210deg, rgba(10, 51, 81, 0) 0%, rgba(10, 51, 81, 1) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351',endColorstr='#0A3351' , GradientType=1);
+
+      p {
+        font-family: $roboto;
+        font-weight: normal;
+      }
     }
     .carousel-indicators {
       right: 0;
@@ -105,20 +111,19 @@
       .carousel-control-next-icon {
         background-image: none;
         border: solid 1px $white;
-        height: 50px;
-        width: 50px;
+        height: rem(68);
+        width: rem(68);
         border-radius: 50%;
         display: block;
         text-align: center;
-        background-color: $carr-arrow;
-        opacity: 0.4;
+        background-color: rgba(10,51,81,0.5);
         i {
           background: url("images/sprite.png");
           height: 32px;
           width: 22px;
           vertical-align: middle;
           display: inline-block;
-          margin: 6px 2px 0 0;
+          margin: 15px 2px 0 0;
         }
       }
       .carousel-control-next-icon {
@@ -616,6 +621,20 @@
       }
     }
 
+    .home-page-carousel-wrap .carousel-caption {
+      min-height:196px;
+      padding: 32px 386px 0 90px;
+      p {
+        font-size: rem(16);
+      }
+
+      h3 {
+        font-size: rem(22);
+        line-height: rem(28);
+        margin-bottom: rem(24);
+      }
+
+    }
   }
 
   .what-you-can-do-wrapper  {
