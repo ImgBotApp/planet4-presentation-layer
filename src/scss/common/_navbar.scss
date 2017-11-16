@@ -95,10 +95,6 @@
     .navbar-brand {
       padding: 0;
       margin: 0;
-
-      img {
-        height: 20px;
-      }
     }
     .navbar {
       padding: 0;
@@ -108,7 +104,7 @@
         text-align: center;
         position: relative;
         line-height: 22px;
-
+        padding: 11px 0;
         &.big-screen-nav-link {
           &:hover {
             transition: 0.5s;
@@ -128,7 +124,6 @@
           }
         }   
         a {
-          font-weight: 500;
           color: $white;
           font-size: 16px;
           display: inline-block; 
@@ -143,6 +138,7 @@
           width: 220px;
           margin-left: 10px;
           visibility: hidden;
+          display: none;
           i {
             display: inline-block;
             float: left;
@@ -160,12 +156,13 @@
             }
           }
         &.nav-search-wrap {
-          width: 35%;
+          width: 30%;
+          margin-left: 20px;
           .top-nav-search-btn {
             background: none;
             border: none;
             position: absolute;
-            top: 9px;
+            top: 18px;
             right: 15px;
           }
           .form-control {
@@ -185,6 +182,7 @@
         }
       }
       .country-select-dropdown {
+        position: relative;
         & > span:after {
           content: "";
           width: 8px;
@@ -308,129 +306,138 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 575px) {
-  //#header {
-  //  .navbar-brand {
-  //    img {
-  //      width: 100%;
-  //    }
-  //  }
-  //  &.top-navigation {
-  //    position: fixed;
-  //    transition: top 0.2s ease-in-out;
-  //    top: 0;
-  //    &.nav-up {
-  //      top: -60px;
-  //    }
-  //    .navbar {
-  //      .country-select-box {
-  //        width: 300px;
-  //        padding: 10px 20px 0 35px;
-  //        margin-left: 0;
-  //        .country-selection-option {
-  //          height: 400px;
-  //          .country-option-box {
-  //            .country-list {
-  //              height: auto;
-  //              ul {
-  //                width: 100%;
-  //              }
-  //            }
-  //          }
-  //        }
-  //      }
-  //      li {
-  //        text-align: left;
-  //        border-bottom: solid 1px $border-color;
-  //        padding: 10px 0 10px 15px;
-  //        width: auto;
-  //        &.loginSignUpWrap {
-  //          i {
-  //            margin-right: 10px;
-  //          }
-  //        }
-  //        &.nav-search-wrap {
-  //          width: 100%;
-  //        }
-  //        &.active {
-  //          border-left: solid 5px $black;
-  //        }
-  //        .styled-select {
-  //          margin-top: 0;
-  //        }
-  //        &.active-li {
-  //          background-color: transparent;
-  //        }
-  //      }
-  //    }
-  //  }
-  //}
-  //.navbar-light {
-  //  width: 100%;
-  //  .navbar-toggler {
-  //    height: auto;
-  //    padding: 10px 20px;
-  //    background: #F2A781;
-  //    color: $white;
-  //    font-size: 14px;
-  //    text-transform: uppercase;
-  //  }
-  //  .navbar-nav {
-  //    margin-top: 15px;
-  //  }
-  //  .mobile-header-wrap {
-  //    text-align: center;
-  //  }
-  //}
-  //
-  //.mobile-search-wrap {
-  //  .fa {
-  //    color: #66CB00;
-  //  }
-  //  .mobile-search-input {
-  //    display: block;
-  //    width: 88%;
-  //    border: 0;
-  //    outline: none;
-  //    padding: 0;
-  //    font-size: 14px;
-  //    font-weight: bold;
-  //    color: #676767;
-  //  }
-  //
-  //  #searchsubmit {
-  //    display: block;
-  //    float: right;
-  //    background: none;
-  //    color: #717171;
-  //    border: 0;
-  //    outline: none;
-  //    cursor: pointer;
-  //    font-size: 15px;
-  //  }
-  //
-  //  #searchbar {
-  //    display: none;
-  //    position: absolute;
-  //    left: 0;
-  //    top: 48px;
-  //    width: 100%;
-  //    padding: 10px 20px;
-  //    border-top: 1px solid #d8d8d8;
-  //    z-index: 9999;
-  //    background: #fff;
-  //    -webkit-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
-  //    -moz-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
-  //    box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
-  //  }
-  //}
-  //.mobile-search-wrap {
-  //  display: inline-block;
-  //}
+  // #header {
+  //   .navbar-brand {
+  //     img {
+  //       width: 100%;
+  //     }
+  //   }
+  //   &.top-navigation {
+  //     position: fixed;
+  //     transition: top 0.2s ease-in-out;
+  //     top: 0;
+  //     &.nav-up {
+  //       top: -60px;
+  //     }
+  //     .navbar {
+  //       .country-select-box {
+  //         width: 300px;
+  //         padding: 10px 20px 0 35px;
+  //         margin-left: 0;
+  //         .country-selection-option {
+  //           height: 400px;
+  //           .country-option-box {            
+  //             .country-list {
+  //               height: auto;
+  //               ul {
+  //                 width: 100%;
+  //               }
+  //             }
+  //           }
+  //         }
+  //       }
+  //       li {
+  //         text-align: left;
+  //         border-bottom: solid 1px $border-color;
+  //         padding: 10px 0 10px 15px;
+  //         width: auto;
+  //         &.loginSignUpWrap {
+  //           i {
+  //             margin-right: 10px;
+  //           }
+  //         }
+  //         &.nav-search-wrap {
+  //           width: 100%;
+  //         }
+  //         &.active {
+  //           border-left: solid 5px $black;
+  //         }
+  //         .styled-select {
+  //           margin-top: 0;
+  //         }
+  //         &.active-li {
+  //           background-color: transparent;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // .navbar-light {
+  //   width: 100%;
+  //   .navbar-toggler {
+  //     height: auto;
+  //     padding: 10px 20px;
+  //     background: #F2A781;
+  //     color: $white;
+  //     font-size: 14px;
+  //     text-transform: uppercase;
+  //   }
+  //   .navbar-nav {
+  //     margin-top: 15px;
+  //   }
+  //   .mobile-header-wrap {
+  //     text-align: center;
+  //   }
+  // }
+  
+
+  // .mobile-search-wrap {
+  //   .fa {
+  //     color: #66CB00;
+  //   }
+  //   .mobile-search-input {
+  //     display: block;
+  //     width: 88%;
+  //     border: 0;
+  //     outline: none;
+  //     padding: 0;
+  //     font-size: 14px;
+  //     font-weight: bold;
+  //     color: #676767;
+  //   }
+
+  //   #searchsubmit {
+  //     display: block;
+  //     float: right;
+  //     background: none;
+  //     color: #717171;
+  //     border: 0;
+  //     outline: none;
+  //     cursor: pointer;
+  //     font-size: 15px;
+  //   }
+  //   #searchbar {
+  //     display: none;
+  //     position: absolute;
+  //     left: 0;
+  //     top: 48px;
+  //     width: 100%;
+  //     padding: 10px 20px;
+  //     border-top: 1px solid #d8d8d8;
+  //     z-index: 9999;
+  //     background: #fff;
+  //     -webkit-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
+  //     -moz-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
+  //     box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
+  //   }
+  // }
+  // .mobile-search-wrap {
+  //   display: inline-block;
+  // }
+  // }
+  // .mobile-search-wrap {
+  //   display: inline-block;
+  // }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   #header {
+    .navbar-brand {
+      img {
+        width: 100%;
+      }
+    }
     &.top-navigation {
       .mobile-menus {
         .country-select-box {
@@ -521,14 +528,18 @@
   #header.top-navigation {
     .navbar {
       li {
+        width: 35%;
         a {
           font-size: 18px;
         }
-
+        &.big-screen-nav-link {
+          margin-top: 12px;
+        }
         .btn-secondary {
-          height: rem(32);
-          line-height: rem(32);
+          height: 42px;
+          line-height: 42px;
           font-size: rem(16);
+          margin: 0;
         }
       }
     }
@@ -542,15 +553,11 @@
 @media (min-width: 1200px) {
   #header.top-navigation {
     position: fixed;
-    padding: 12px 0;
+    padding: 0;
     top: 0;
     .navbar-brand {
       padding: 0;
       margin: 0;
-
-      img {
-        height: 26px;
-      }
     }
     .navbar {
       li {
@@ -559,7 +566,9 @@
         }
         .btn-secondary {
           height: rem(36);
-          line-height: rem(36);
+          line-height: 42px;
+          min-height: 42px;
+          margin: 0;
         }
       }
     }

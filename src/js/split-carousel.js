@@ -10,8 +10,8 @@ $('#carousel-wrapper').on('slid.bs.carousel', function () {
   } else {
     currentIndex = currentIndex.find('img').attr('src');
   }
-  $('a.carousel-control-next').css('background-image', 'url(' + currentIndex + ')');
+  $('.split-carousel-wrap a.carousel-control-next').css('background-image', 'url(' + currentIndex + ')');
 
 });
 
-  $('a.carousel-control-next').css('background-image', 'url(' + currentIndex + ')');
+  $('.split-carousel-wrap a.carousel-control-next').css('background-image', 'url(' + currentIndex + ')');

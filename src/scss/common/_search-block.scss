@@ -915,14 +915,16 @@
     font-family: $roboto;
     font-style: italic;
     color: #666666;
+    line-height: normal;
   }
   .search-filter-results {
-    margin-top: 64px;
+    margin-top: 104px;
     .filter-sidebar {
       position: relative;
       h4 {
         font-size: rem(28);
         margin-bottom: 48px;
+        font-weight: bold;
       }
       .filteritem {
         a {
@@ -1100,7 +1102,7 @@
         ul {
           li {
             margin-bottom: 32px;
-            padding-bottom: 20px;
+            padding-bottom: 32px;
             border-bottom: 1px solid #ddd;
             position: relative;
             .search-result-item-image, .blank-block {
@@ -1138,10 +1140,16 @@
                     margin-right: -20px;
                     margin-top: 5px;
                   }
+                  &:hover {
+                    color: #1680DA;
+                  }
                 }
                 .search-result-item-tag {
                   color: #0E538E;
                   text-decoration: none;
+                  &:hover {
+                    color: #1680DA;
+                  }
                 }
               }
               .search-result-item-headline {
@@ -1151,17 +1159,20 @@
                 font-weight: 500;
                 display: block;
                 margin-bottom: 16px;
+                line-height: normal;
               }
               .search-result-item-info {
                 font-size: rem(16);
                 font-style: italic;
                 color: #676767;
                 margin-bottom: 40px;
+                line-height: normal;
               }
               .search-result-item-content {
                 font-size: rem(18);
                 color: #1A1A1A;
                 line-height: 30px;
+                margin-bottom: 0;
               }  
             }
             .search-result-item-actionbox {
@@ -1183,8 +1194,21 @@
             }
             &.search-result-list-item-bg {
               @include background('images/search-list.jpg');
-              padding-top: 30px;
-              padding-bottom: 30px;
+              padding-top: 32px;
+              padding-bottom: 32px;
+              .search-result-item-headline {
+                margin-bottom: 24px;
+              }
+              .btn {
+                margin-top: 32px;
+                cursor: pointer;
+              }
+            }
+            &:hover {
+              .search-result-item-headline, .search-result-item-content, img {
+                cursor: pointer;
+                text-decoration: underline;
+              }
             }
           }
         }
@@ -1251,7 +1275,7 @@
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .search-block {
     padding-top: 56px;
     .without-search-result {
@@ -1294,7 +1318,7 @@
       }
     }
     .search-result {
-      margin-top: 48px;
+      margin-top: 0px;
       .search-tag {
         font-size: rem(14);
         width: 114px;
@@ -1316,10 +1340,10 @@
     }
     .search-info {
       font-size: rem(16);
-      margin-bottom: 24px;
+      margin-bottom: 0px;
     }
     .search-filter-results {
-      margin-top: 64px;
+      margin-top: 48px;
       .filter-sidebar {
         h4 {
           font-size: rem(28);
@@ -1331,15 +1355,15 @@
             border-top: 0;
             border-bottom-width: 4px;
             padding: 11px 30px;
-            font-size: rem(20);
+            font-size: rem(16);
             font-weight: bold;
-            margin-bottom: 32px;  
+            margin-bottom: 24px;  
           }
           ul {
             li {
               height: 42px;
               .custom-control-description {
-                font-size: rem(18);
+                font-size: rem(16);
               }
             }
           }
@@ -1536,6 +1560,43 @@
       }
     }  
   }
+  .filter-modal {
+    .modal-dialog {
+      max-width: 90%;
+      .modal-body {
+        padding: 30px 15px;
+        .modal-title {
+          font-size: rem(26);
+          margin-bottom: 24px;
+        }
+        .btnact {
+          .cancelbtn {
+            min-width: 45%;
+            border-color: #F36D3A;
+            color: #F36D3A;
+            &:hover {
+              background: transparent;
+              color: #000;
+            }
+          }
+          .applybtn {
+            width: 50%;
+            float: right;
+          }
+        }
+      }
+      .closebtn {
+        float: right;
+        margin-top: -62px;
+        border-radius: 20px;
+        padding: 8px 12px;
+        margin-right: 0;
+        i {
+          font-size: rem(12);
+        }
+      }
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -1600,10 +1661,10 @@
     }
     .search-info {
       font-size: rem(18);
-      margin-bottom: 24px;
+      margin-bottom: 0px;
     }
     .search-filter-results {
-      margin-top: 64px;
+      margin-top: 104px;
       .filter-sidebar {
         h4 {
           font-size: rem(26);
@@ -1647,6 +1708,30 @@
         }
         .search-result-list {
           height: 120px;
+        }
+        .multiple-search-result {
+          ul {
+            li {
+              .search-result-item-body {
+                .search-result-tags {
+                  font-size: rem(14);
+                  margin-bottom: 8px;
+                }
+                .search-result-item-headline {
+                  font-size: rem(22);
+                  margin-bottom: 24px;
+                }
+                .search-result-item-info {
+                  font-size: rem(14);
+                  margin-bottom: 32px;
+                }
+                .search-result-item-content {
+                  font-size: rem(16);
+                  line-height: 28px;
+                }
+              }
+            }
+          }
         }
         .suggested-search-terms {
           margin: 104px 0;
@@ -1732,10 +1817,10 @@
     }
     .search-info {
       font-size: rem(28);
-      margin-bottom: 32px;
+      margin-bottom: 0px;
     }
     .search-filter-results {
-      margin-top: 64px;
+      margin-top: 104px;
       .filter-sidebar {
         h4 {
           font-size: rem(26);
@@ -1860,7 +1945,7 @@
       font-size: rem(32);
     }
     .search-filter-results {
-      margin-top: 64px;
+      margin-top: 104px;
       .filter-sidebar {
         h4 {
           font-size: rem(28);
