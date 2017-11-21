@@ -103,7 +103,7 @@
         text-align: center;
         position: relative;
         line-height: 22px;
-        padding: 11px 0;
+        padding: 11px;
         &.big-screen-nav-link {
           &:hover {
             transition: 0.5s;
@@ -199,7 +199,6 @@
           line-height: 40px;
           display: block;
           position: relative;
-          padding-right: 24px;
         }
       }
       .country-select-box {
