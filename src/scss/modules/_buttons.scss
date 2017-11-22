@@ -77,18 +77,6 @@ Stylesheet: Button Styles
   border-color: $secondary-button-hover;
 }
 
-.yellow-button {
-  border-color: $yellow-button;
-  color: $yellow-button-color;
-  background: $yellow-button;
-  text-transform: uppercase;
-}
-.yellow-button:hover {
-  background-color: $yellow-button-hover;
-  border-color: $yellow-button;
-  color: $yellow-button-color;
-}
-
 .btn-green {
   background: $gp-green-80;
   color: $white;
