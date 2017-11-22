@@ -93,18 +93,7 @@ $maroon:      #3f0901;
 
 
 // Other defined colors we need to convert:
-$red:       #ad2330;
 $blue:      #2980b9;
-
-/** Colors that we need changed:
- * #092856 - comments
- * #094464, E4F2F9 - cookie bar
- * #0E538E - search
- * #6E98BB - search
- * #
- * #
- */
-
 
 /**
  * From this point on only the above color variables should be used in the codebase.
@@ -112,51 +101,52 @@ $blue:      #2980b9;
 
 
 // Used variables
+$carr-arrow:            $blue-tiber;
+$blue-heading:          $blue-tiber;
+$brown-bg-tags-text:    $yellow;
+$header-footer-bg:      $black;
+$nav-link:              $inch-worm;
+$primary-button:        $orange;
+$primary-button-hover:  $orange-hover;
+$secondary-button:      $spray;
+
+
+// Need to be re-assigned colors.
 $active:                #aed4c7;
 $blue-bg-anchor:        #30a7af;
 $blue-bg:               #03484f;
 $blue-btn-border:       #064364; // Duplicate
-$blue-heading:          #004950;
 $blue-text:             #12757B;
 $border-color:          #07403a;
-$brown-bg-tags-text:    $yellow;
 $brown-bg:              #FAF7EC;
 $card-header-bg:        #c7dcd3;
-$carr-arrow:            $blue-tiber;
+$carousel-active:       #064364; // Duplicate
 $fixed-nav-bg:          #247670;
-$header-footer-bg:      $black;
 $light-blue-bg:         #D6E6F2;
 $light-blue:            #67B2AF;
-$nav-link:              #a6df20;
-$para-text:             #005552;
 $percentage-text:       #017e7a;
-$primary-button:        $orange;
-$primary-button-hover:  $orange-hover;
 $secondary-button-hover:#9af9f3;
-$secondary-button:      $spray;
 $step-normal-bg:        #E4E7DA;
 $steps-deactive-text:   #06747A;
 $top-nav:               #1e5f65;
-$yellow-button-color:   #301c01;
-$yellow-button-hover:   #fac235;
-$yellow-button:         $yellow;
 
 
 // Used once.
+$border:                $grey;
 $blue-btn:              #0EC2DE;
 $body-bg:               #b0d4c8;
-$border:                $grey;
 $brown-bg-tags-link:    #E88D75;
 $container-bg:          #AFD4C7;
 $green-link-hover:      #77dd11;
 $heading:               #004d53;
 $secondary-button-bg:   #9fd0c8;
-$step-number-hover:     #42b3aa;
 $step-number:           #dc9509;
 
 
-// As-of-yet-unused.
-$carousel-active:       #064364; // Duplicate
+// Maybe can get rid of.
+$yellow-button-color:   #301c01;
+$yellow-button-hover:   #fac235;
+$yellow-button:         $yellow;
 
 
 // Media queries

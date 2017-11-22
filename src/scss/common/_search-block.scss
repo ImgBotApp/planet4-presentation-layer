@@ -829,7 +829,7 @@ $search-blue:  #0E538E;
       background: $grey-20;
       padding: 32px;
       border-radius: 5px;
-      border: 1px solid #CEDBE7;
+      border: 1px solid $grey-40;
       input {
         height: 56px;
         line-height: 56px;
@@ -867,7 +867,7 @@ $search-blue:  #0E538E;
           }
           &:hover {
             z-index: 0;
-            background-color: #CFDDE8;
+            background-color: $grey-20;
           }
         }
       }
