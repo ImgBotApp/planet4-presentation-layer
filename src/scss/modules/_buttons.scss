@@ -90,7 +90,7 @@ Stylesheet: Button Styles
 }
 
 .btn-green {
-  background: #65cb00;
+  background: $gp-green-80;
   color: $white;
 }
 .btn-blue {
@@ -127,12 +127,12 @@ Stylesheet: Button Styles
 
 .secondary-button {
   background: $secondary-button-bg;
-  color: $med-blue;
-  border: solid 1px $med-blue;
+  color: $blue-tiber;
+  border: solid 1px $blue-tiber;
   text-transform: uppercase;
   font-weight: 500;
   &:hover {
-    background: $med-blue;
+    background: $blue-tiber;
     color: $white;
   }
   &:focus {
@@ -140,17 +140,17 @@ Stylesheet: Button Styles
     box-shadow: none;
   }
   &:active {
-    background: #3B5C74;
+    background: $blue-tiber;
   }
 }
 .btn-transparent {
   background: transparent;
-  color: $med-blue;
-  border: solid 1px $med-blue;
+  color: $blue-tiber;
+  border: solid 1px $blue-tiber;
   text-transform: uppercase;
   font-weight: 500;
   &:hover {
-    background: $med-blue;
+    background: $blue-tiber;
     color: $white;
   }
   &:focus {
@@ -158,7 +158,7 @@ Stylesheet: Button Styles
     box-shadow: none;
   }
   &:active {
-    background: #3B5C74;
+    background: $blue-tiber;
   }
 }
 .btn-normal {
@@ -171,8 +171,8 @@ Stylesheet: Button Styles
 }
 .btn-light-blue {
   background: #D9F0F6;
-  color: #144363;
-  border: 1px solid #144363;
+  color: $blue-tiber;
+  border: 1px solid $blue-tiber;
   &:hover {
     background: #B2E1ED;
   }

@@ -65,7 +65,7 @@ $inch-worm:         #a7e021;
 $pastel-green:      #72e360;
 $dark-pastel-green: #6ed961;
 $emerald:           #47c46c;
-$ocean-greaan:      #3aa974;
+$ocean-grean:       #3aa974;
 $sea-green:         #26774e;
 
 // Various blues:
@@ -91,12 +91,20 @@ $red:         #a01604;
 $dark-copper: #7a1805;
 $maroon:      #3f0901;
 
+
 // Other defined colors we need to convert:
 $red:       #ad2330;
 $blue:      #2980b9;
-$med-blue:  #0A3351;
-$dark-blue: #152431;
-$purple:    #200721;
+
+/** Colors that we need changed:
+ * #092856 - comments
+ * #094464, E4F2F9 - cookie bar
+ * #0E538E - search
+ * #6E98BB - search
+ * #
+ * #
+ */
+
 
 /**
  * From this point on only the above color variables should be used in the codebase.
@@ -114,8 +122,7 @@ $border-color:          #07403a;
 $brown-bg-tags-text:    $yellow;
 $brown-bg:              #FAF7EC;
 $card-header-bg:        #c7dcd3;
-$carr-arrow:            $med-blue;
-$darkb-blue-text:       #264042;
+$carr-arrow:            $blue-tiber;
 $fixed-nav-bg:          #247670;
 $header-footer-bg:      $black;
 $light-blue-bg:         #D6E6F2;
@@ -141,7 +148,6 @@ $body-bg:               #b0d4c8;
 $border:                $grey;
 $brown-bg-tags-link:    #E88D75;
 $container-bg:          #AFD4C7;
-$dark-para-text:        #011D1E;
 $green-link-hover:      #77dd11;
 $heading:               #004d53;
 $secondary-button-bg:   #9fd0c8;

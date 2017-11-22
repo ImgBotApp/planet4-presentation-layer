@@ -86,7 +86,7 @@
       background : linear-gradient(210deg, rgba(136, 196, 213, 0.2) 0%, rgba(184, 216, 232, 1) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0A3351',endColorstr='#0A3351' , GradientType=1);
       .main-header {
-        color: $dark-blue;
+        color: $black;
         padding-top: 120px;
         padding-bottom: 70px;
         h1 {
@@ -120,7 +120,7 @@
     display: none;
   }
   .carousel-indicators {
-    li.active {background: #9BD25C}
+    li.active {background: $inch-worm}
   }
 }
 

@@ -57,7 +57,7 @@
     overflow: hidden;
       h1 {
         font-size: rem(38);
-        color: $dark-blue;
+        color: $black;
         margin-bottom: 40px; 
         line-height: 45px;
       }
@@ -222,7 +222,7 @@
         .carousel-inner{
           .carousel-item-credit {
             margin: -20px 0;
-            color: #6D6D6D;
+            color: $grey-60;
             font-size: rem(11);
           }
           .carousel-caption {

@@ -74,7 +74,7 @@
   right: 0;
   width: 320px;
   padding: 10px 5px;
-  background: #02484e;
+  background: $tiber;
   input[type="text"] {
     padding: 0 10px;
     border-radius: 5px;
@@ -224,7 +224,7 @@
             width: 4px;
           }
           &::-webkit-scrollbar-thumb {
-            background-color: #4d8b42;
+            background-color: $green-60;
           }
           .country-option-box {
             color: $white;
@@ -263,9 +263,9 @@
                     text-decoration: none;
                   }
                   &.active {
-                    color: #a4df23;
+                    color: $inch-worm;
                     a {
-                      color: #a4df23;
+                      color: $inch-worm;
                     }
                   }
                   &.list-title {
@@ -383,7 +383,7 @@
 
   // .mobile-search-wrap {
   //   .fa {
-  //     color: #66CB00;
+  //     color: $gp-green-80;
   //   }
   //   .mobile-search-input {
   //     display: block;
@@ -484,7 +484,7 @@
   }
   .mobile-search-wrap {
     .fa {
-      color: #66CB00;
+      color: $gp-green-80;
     }
     .mobile-search-input {
       display: block;

@@ -19,8 +19,6 @@
 <!-- Author Block End -->
 */
 
-$author-grey: #E2E5E8;
-
 .author-block {
   margin-top: 104px;
   width: 80%;
@@ -32,10 +30,10 @@ $author-grey: #E2E5E8;
     height: 300px;
     float: left;
     &.author-info {
-      background: $author-grey;
+      background: $grey-20;
       z-index:1;
       padding: 40px 0 0 32px;
-      @include skew($bg: $author-grey, $deg: 25deg, $right: -70px, $width: 155px);
+      @include skew($bg: $grey-20, $deg: 25deg, $right: -70px, $width: 155px);
       .author-info-inner {
         h2 {
           font-size: rem(20);
@@ -76,10 +74,10 @@ $author-grey: #E2E5E8;
       height: 300px;
       float: left;
       &.author-info {
-        background: $author-grey;
+        background: $grey-20;
         z-index:1;
         padding: 20px;
-        @include skew($bg: $author-grey, $deg: 0deg, $right: 0px, $width: 0px);
+        @include skew($bg: $grey-20, $deg: 0deg, $right: 0px, $width: 0px);
         .author-info-inner {
           h2 {
             font-size: rem(16);
@@ -117,10 +115,10 @@ $author-grey: #E2E5E8;
       height: 300px;
       float: left;
       &.author-info {
-        background: $author-grey;
+        background: $grey-20;
         z-index:1;
         padding: 40px 0 0 32px;
-        @include skew($bg: $author-grey, $deg: 25deg, $right: -70px, $width: 155px);
+        @include skew($bg: $grey-20, $deg: 25deg, $right: -70px, $width: 155px);
         .author-info-inner {
           h2 {
             font-size: rem(16);
@@ -158,10 +156,10 @@ $author-grey: #E2E5E8;
       height: 300px;
       float: left;
       &.author-info {
-        background: $author-grey;
+        background: $grey-20;
         z-index:1;
         padding: 40px 0 0 32px;
-        @include skew($bg: $author-grey, $deg: 25deg, $right: -70px, $width: 155px);
+        @include skew($bg: $grey-20, $deg: 25deg, $right: -70px, $width: 155px);
         .author-info-inner {
           h2 {
             font-size: rem(16);

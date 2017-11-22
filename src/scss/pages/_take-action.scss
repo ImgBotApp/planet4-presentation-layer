@@ -170,7 +170,7 @@
     padding-top: 30px;
   }
   p {
-    color: $dark-para-text;
+    color: $grey;
     font-size: rem(17);
     line-height: rem(28.9);
 
@@ -220,7 +220,7 @@
 
         @include medium-and-up {
           font-weight: 500;
-          color: $darkb-blue-text;
+          color: $black;
           font-size: rem(20);
           line-height: rem(30);
         }
@@ -266,7 +266,7 @@
     .step-info-wrap {
       .steps-action {
         .secondary-button {
-          background-color: $med-blue;
+          background-color: $blue-tiber;
           color: $white;
         }
       }

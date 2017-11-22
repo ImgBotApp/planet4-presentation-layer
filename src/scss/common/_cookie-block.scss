@@ -32,12 +32,12 @@ $cookie-blue: #094464;
     font-weight: 500;
     color: $cookie-blue;
     background: #E4F2F9;
-    border: 1px solid #004766;
+    border: 1px solid $tiber;
     width: 100%;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     &:hover {
       cursor: pointer;
-      background: #004766;
+      background: $tiber;
       color: $white;
     }
   }
