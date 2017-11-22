@@ -54,13 +54,49 @@ $yellow-20:   #fff6cd;
 $orange:       #f36d3a;
 $orange-hover: #ee562d;
 
+// Various greens:
+$shamrock:          #37d88d;
+$dark-shamrock:     #32ca89;
+$elm:               #229073;
+$eden:              #0f6459;
+$deep-sea-green:    #0a4f45;
+$tiber:             #043029;
+$inch-worm:         #a7e021;
+$pastel-green:      #72e360;
+$dark-pastel-green: #6ed961;
+$emerald:           #47c46c;
+$ocean-greaan:      #3aa974;
+$sea-green:         #26774e;
 
+// Various blues:
+$spray:        #86eee7;
+$aquamarine:   #68dfde;
+$scooter:      #25c9dc;
+$java:         #1bb6d6;
+$java-2:       #1bdfdf;
+$java-dark:    #21cbca;
+$java-darkest: #28b7b5;
+$cerulean:     #03aad6;
+$allports:     #007799;
+$blue-elm:     #22938d;
+$genoa:        #186a70;
+$blue-tiber:   #093944;
+
+// Various reds:
+$peach:       #eaccbb;
+$dark-pink:   #d39c92;
+$apricot:     #ea8e75;
+$crimson:     #e51538;
+$red:         #a01604;
+$dark-copper: #7a1805;
+$maroon:      #3f0901;
+
+// Other defined colors we need to convert:
 $red:       #ad2330;
 $blue:      #2980b9;
 $med-blue:  #0A3351;
 $dark-blue: #152431;
 $purple:    #200721;
-
 
 /**
  * From this point on only the above color variables should be used in the codebase.
@@ -87,16 +123,17 @@ $light-blue:            #67B2AF;
 $nav-link:              #a6df20;
 $para-text:             #005552;
 $percentage-text:       #017e7a;
-$primary-button:        #F36D3A;
-$primary-button-hover:  #e02d00;
+$primary-button:        $orange;
+$primary-button-hover:  $orange-hover;
 $secondary-button-hover:#9af9f3;
-$secondary-button:      #86eee7;
+$secondary-button:      $spray;
 $step-normal-bg:        #E4E7DA;
 $steps-deactive-text:   #06747A;
 $top-nav:               #1e5f65;
 $yellow-button-color:   #301c01;
 $yellow-button-hover:   #fac235;
 $yellow-button:         $yellow;
+
 
 // Used once.
 $blue-btn:              #0EC2DE;
@@ -111,18 +148,10 @@ $secondary-button-bg:   #9fd0c8;
 $step-number-hover:     #42b3aa;
 $step-number:           #dc9509;
 
+
 // As-of-yet-unused.
-$blue-btn-hover:        #064364; // Duplicate
 $carousel-active:       #064364; // Duplicate
-$greenpeace-dark-green: #264725;
-$greenpeace-green:      #7dd667;
-$heading-border:        #8db8af;
-$heading-sub-text:      #007e7b;
-$light-blue-text:       #99CBCA;
-$light-border:          #bddac8;
-$red-text:              $red;
-$tags-text:             #007e7a;
-$tags:                  #326a69;
+
 
 // Media queries
 $small-width: 575px;
