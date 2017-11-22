@@ -48,7 +48,7 @@
     @include medium-and-up {
       margin-top: 0;
     }
-    color: #d8d8d8;
+    color: $grey-20;
     text-align: center;
     li {
       margin-bottom: 24px;
@@ -58,7 +58,7 @@
       }
     }
     a {
-      color: #d8d8d8;
+      color: $grey-20;
       text-transform: uppercase;
       font-size: rem(16);
       @include medium-and-up {

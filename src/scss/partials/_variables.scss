@@ -62,7 +62,9 @@ $dark-blue: #152431;
 $purple:    #200721;
 
 
-
+/**
+ * From this point on only the above color variables should be used in the codebase.
+ */
 
 
 // Used variables
@@ -79,7 +81,7 @@ $card-header-bg:        #c7dcd3;
 $carr-arrow:            $med-blue;
 $darkb-blue-text:       #264042;
 $fixed-nav-bg:          #247670;
-$header-footer-bg:      #030403;
+$header-footer-bg:      $black;
 $light-blue-bg:         #D6E6F2;
 $light-blue:            #67B2AF;
 $nav-link:              #a6df20;
