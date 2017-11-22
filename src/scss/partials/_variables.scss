@@ -8,18 +8,64 @@ Here is where we declare all our variables like colors, fonts,
 base values, and defaults.
 ******************************************************************/
 
-// Colors.
-$black:     #000;
-$white:     #fff;
-$grey:      #333;
+/**
+ * A note on colors:
+ *
+ * Every single color on this site should use a color variable as defined
+ * in this file for brand consistency and code maintenance.
+ *
+ * Once a color is defined here, it should not change and will remain
+ * consistent.
+ */
+
+// Primary Colors.
+$black:       #000;
+$white:       #fff;
+
+$grey:        #333;
+$grey-60:     #666;
+$grey-40:     #999;
+$grey-20:     #ccc;
+
+$gp-green:    #66cc00; // Should only ever be used on the GP logo/wordmark.
+$gp-green-80: #8bcc49;
+$gp-green-60: #abd879;
+$gp-green-40: #c7e5a5;
+$gp-green-20: #e3f2d3;
+
+$green:       #003300;
+$green-80:    #1b4a1b;
+$green-60:    #4a7a4a;
+$green-40:    #94b794;
+$green-20:    #d9e6d7;
+
+$blue:        #2077bf;
+$blue-80:     #3290de;
+$blue-60:     #63bbfd;
+$blue-40:     #86cafb;
+$blue-20:     #b8e0fa;
+
+$yellow:      #FFD204;
+$yellow-80:   #ffdb34;
+$yellow-60:   #ffe467;
+$yellow-40:   #ffed98;
+$yellow-20:   #fff6cd;
+
+$orange:       #f36d3a;
+$orange-hover: #ee562d;
+
+
 $red:       #ad2330;
-$yellow:    #FFD204;
 $blue:      #2980b9;
 $med-blue:  #0A3351;
 $dark-blue: #152431;
 $purple:    #200721;
 
-// Used colors
+
+
+
+
+// Used variables
 $active:                #aed4c7;
 $blue-bg-anchor:        #30a7af;
 $blue-bg:               #03484f;
