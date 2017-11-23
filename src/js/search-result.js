@@ -1,4 +1,6 @@
 $(function() {
+	var load_more_count = 0;
+
 	$( '#search-type button' ).click( function () {
 		$( '#search-type button' ).removeClass( 'active' );
 		$( this ).addClass( 'active' );
