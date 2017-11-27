@@ -809,8 +809,6 @@
 
 /* CSS for covers */
 
-$search-blue:  #0E538E;
-
 .search-block {
   padding-top: 64px;
   background: $grey-20;
@@ -844,7 +842,7 @@ $search-blue:  #0E538E;
           width: 50%;
           cursor: pointer;
           &.active {
-            background-color: $search-blue;
+            background-color: $blue-elm;
             border-color: transparent;
             color: $white;
             &:before {
@@ -862,7 +860,7 @@ $search-blue:  #0E538E;
             }
             &:hover {
               z-index: 2;
-              background-color: $search-blue;
+              background-color: $blue-elm;
             }
           }
           &:hover {
@@ -1125,7 +1123,7 @@ $search-blue:  #0E538E;
                   display: inline-block;
                 }
                 .search-result-item-head {
-                  color: $search-blue;
+                  color: $blue-elm;
                   font-weight: bold;
                   text-decoration: none;
                   margin-right: 30px;
@@ -1138,19 +1136,19 @@ $search-blue:  #0E538E;
                     width: 8px;
                     height: 8px;
                     border-radius: 5px;
-                    background-color: $search-blue;
+                    background-color: $blue-elm;
                     margin-right: -20px;
                     margin-top: 5px;
                   }
                   &:hover {
-                    color: #1680DA;
+                    color: $blue-elm;
                   }
                 }
                 .search-result-item-tag {
-                  color: $search-blue;
+                  color: $blue-elm;
                   text-decoration: none;
                   &:hover {
-                    color: #1680DA;
+                    color: $blue-elm;
                   }
                 }
               }
@@ -1227,7 +1225,7 @@ $search-blue:  #0E538E;
           margin: 0;
           li {
             a {
-              color: $search-blue;
+              color: $blue-elm;
               text-decoration: none;
               font-size: rem(22);
               line-height: 42px;
@@ -1444,7 +1442,7 @@ $search-blue:  #0E538E;
                   display: inline-block;
                 }
                 .search-result-item-head {
-                  color: $search-blue;
+                  color: $blue-elm;
                   font-weight: bold;
                   text-decoration: none;
                   margin-right: 20px;
@@ -1457,13 +1455,13 @@ $search-blue:  #0E538E;
                     width: 8px;
                     height: 8px;
                     border-radius: 5px;
-                    background-color: $search-blue;
+                    background-color: $blue-elm;
                     margin-right: -15px;
                     margin-top: 5px;
                   }
                 }
                 .search-result-item-tag {
-                  color: $search-blue;
+                  color: $blue-elm;
                   text-decoration: none;
                 }
               }

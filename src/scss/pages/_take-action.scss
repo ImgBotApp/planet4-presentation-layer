@@ -161,7 +161,7 @@
 }
 
 .what-you-can-do-wrapper {
-  background: $container-bg;
+  background: $green-20;
   h2 {
     padding: 50px 0 0;
     color: $blue-heading;
@@ -204,7 +204,7 @@
       line-height: 74px;
       text-align: center;
       font-size: rem(44);
-      background: $step-normal-bg;
+      background: transparentize($white, .5);
       border-radius: 50%;
       color: $active;
       text-transform: uppercase;
@@ -234,7 +234,7 @@
         @include x-large-and-up {
           font-size: rem(24);
           line-height: rem(31);
-          color: $heading;
+          color: $blue-tiber;
         }
       }
       p {
@@ -287,7 +287,7 @@
   margin: 15px 15px 0 0;
   width: 100%;
   .card-header {
-    background: $card-header-bg;
+    background: $green-20;
     border: none;
     h5 {
       a {
@@ -327,7 +327,7 @@
     }
     .card-block {
       padding: 15px 10px 15px;
-      border-bottom: solid 1px $card-header-bg;
+      border-bottom: solid 1px $green-20;
       margin-bottom: 10px;
 
       p {
@@ -558,7 +558,7 @@
         line-height: 128px;
         text-align: center;
         font-size: rem(70);
-        background: $step-normal-bg;
+        background: transparentize($white, .5);;
         border-radius: 50%;
         color: $active;
         text-transform: uppercase;
