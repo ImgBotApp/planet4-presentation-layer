@@ -1,0 +1,159 @@
+/* Header block
+ * The main block where a heading subheading and description along with 
+ * a CTA button is present
+ */
+
+.header-wrapper {
+	height: 0;
+}
+
+.page-header {
+	color: $white;
+	padding: 110px 0 50px;
+	position: relative;
+
+	@include large-and-up {
+		padding-top: 170px;
+	}
+
+	.container > *:not(.row) {
+		@include medium-and-up {
+			max-width: 90%;
+		}
+
+		@include large-and-up {
+			max-width: 70%;
+		}
+
+		@include x-large-and-up {
+			max-width: 50%;
+		}
+	}
+}
+
+.page-header-background {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		z-index: 0;
+		height: 75%;
+		bottom: -.5%;
+		left: 0;
+		right: 0;
+		@include linear-gradient( 360deg, $body-bg 0%, transparent 100% );
+
+		.brown-bg & {
+			@include linear-gradient( 360deg, $brown-bg 0%, transparent 100% );
+		}
+	}
+}
+
+.page-header-image {
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+.top-page-tags {
+	font-size: rem(14);
+}
+
+.top-tag {
+	color: $yellow;
+	font-weight: 300;
+	margin-right: 20px;
+	position: relative;
+
+	&:after {
+		content: "\2022";
+		pointer-events: none;
+		display: inline-block;
+		position: absolute;
+		right: -15px;
+	}
+
+	&:hover {
+		color: $yellow;
+	}
+
+	&:last-of-type {
+		margin-right: 0;
+
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.top-tag--category {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.page-header-title {
+	font-size: rem(40);
+	max-width: 80%;
+	margin-bottom: 0;
+
+	@include medium-and-up {
+		font-size: rem(48);
+	}
+
+	@include large-and-up {
+		font-size: rem(56);
+	}
+
+	@include x-large-and-up {
+		font-size: rem(66);
+	}
+}
+
+.page-header-subtitle {
+	font-size: rem(22);
+	line-height: 1.4;
+	font-weight: 300;
+	max-width: 80%;
+	margin: 20px 0;
+
+	@include medium-and-up {
+		font-size: rem(24);
+	}
+
+	@include large-and-up {
+		font-size: rem(30);
+	}
+
+	@include x-large-and-up {
+		font-size: rem(44);
+	}
+}
+
+.page-header-btn {
+	display: block;
+	width: 100%;
+}
+
+.page-header-content {
+	display: none;
+
+	@include medium-and-up {
+		display: block;
+		font-size: rem(19);
+		line-height: 1.6;
+	}
+
+	@include large-and-up {
+		font-size: rem(20);
+	}
+
+	@include x-large-and-up {
+		font-size: rem(22);
+	}
+}

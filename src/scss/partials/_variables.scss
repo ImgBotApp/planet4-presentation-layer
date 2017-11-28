@@ -93,7 +93,18 @@ $maroon:      #3f0901;
 
 
 // Other defined colors we need to convert:
-$blue:      #2980b9;
+$blue:            #2980b9;
+$med-blue:        #0A3351;
+$dark-blue:       #152431;
+$purple:          #200721;
+$active:          #aed4c7;
+$blue-bg-anchor:  #30a7af;
+$blue-bg:         #03484f;
+$blue-btn-border: #064364; // Duplicate
+$blue-heading:    #004950;
+$blue-text:       #12757B;
+$border-color:    #07403a;
+
 
 /**
  * From this point on only the above color variables should be used in the codebase.

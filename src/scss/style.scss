@@ -1,5 +1,6 @@
 // Include the buttons
 @import "partials/variables";
+@import "partials/functions";
 @import "partials/mixins";
 @import "partials/typography";
 @import "partials/custom";
@@ -18,14 +19,13 @@
 // Import Blocks
 @import "common/navbar";
 @import "common/footer";
-@import "common/header";
 @import "common/tasks";
 @import "common/happy-point-block";
 @import "common/static-four-column";
 @import "common/content-two-column";
 @import "common/split-box-out";
 @import "common/article";
-@import "common/header";
+@import "common/page-header";
 @import "common/carousel";
 @import "common/subheader";
 @import "common/covers";
