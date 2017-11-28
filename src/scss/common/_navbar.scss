@@ -33,7 +33,7 @@
 }
 
   .mobile-menus {
-  @include linear-gradient(124deg, #234448 0%,#2b5459 50%,#356268 50%,#356268 50%,#356268 51%,#2b5459 100%)
+  @include linear-gradient(124deg, #234448 0%,#2b5459 50%,#356268 50%,#356268 50%,#356268 51%,#2b5459 100%);
   width: 300px;
   position: fixed; 
   left: -320px; 
