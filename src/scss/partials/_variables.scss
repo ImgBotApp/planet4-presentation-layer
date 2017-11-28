@@ -74,7 +74,7 @@ $sea-green:         #26774e;
 // Various blues:
 $dark-blue:    #074365;
 $spray:        #86eee7; // wtf no longer in the palette?
-$new-new-blue: #afd4c7;
+$body-blue:    #afd4c7;
 $aquamarine:   #68dfde;
 $scooter:      #25c9dc;
 $java:         #1bb6d6;
@@ -114,7 +114,9 @@ $blue-bg-anchor:        $java-dark;
 $blue-btn-border:       $allports;
 $blue-heading:          $blue-tiber;
 $blue-text:             $genoa;
+$body-bg:               $body-blue;
 $brown-bg-tags-text:    $yellow;
+$carousel-active:       $dark-blue;
 $header-footer-bg:      $black;
 $nav-link:              $inch-worm;
 $percentage-text:       $genoa;
@@ -128,15 +130,13 @@ $top-nav:               $blue-tiber;
 // Need to be re-assigned colors.
 $border-color:          #07403a;
 $brown-bg:              #FAF7EC;
-$carousel-active:       #064364; // Duplicate
+
 $fixed-nav-bg:          #247670;
 $light-blue-bg:         #D6E6F2;
-$light-blue:            #67B2AF;
 
 
 // Used once.
 $blue-btn:              #0EC2DE;
-$body-bg:               #b0d4c8;
 $brown-bg-tags-link:    #E88D75;
 $step-number:           #dc9509;
 
