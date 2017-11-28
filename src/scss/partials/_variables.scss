@@ -22,6 +22,7 @@ base values, and defaults.
 $black:       #000;
 $white:       #fff;
 
+$grey-80:     #191919;
 $grey:        #333;
 $grey-60:     #666;
 $grey-40:     #999;
@@ -45,12 +46,13 @@ $blue-60:     #63bbfd;
 $blue-40:     #86cafb;
 $blue-20:     #b8e0fa;
 
-$yellow:      #FFD204;
+$yellow:      #ffd204;
 $yellow-80:   #ffdb34;
 $yellow-60:   #ffe467;
 $yellow-40:   #ffed98;
 $yellow-20:   #fff6cd;
 
+// Oranges:
 $orange:       #f36d3a;
 $orange-hover: #ee562d;
 
@@ -61,6 +63,7 @@ $elm:               #229073;
 $eden:              #0f6459;
 $deep-sea-green:    #0a4f45;
 $tiber:             #043029;
+$dark-tiber:        #052a30;
 $inch-worm:         #a7e021;
 $pastel-green:      #72e360;
 $dark-pastel-green: #6ed961;
@@ -69,18 +72,21 @@ $ocean-grean:       #3aa974;
 $sea-green:         #26774e;
 
 // Various blues:
-$spray:        #86eee7;
+$dark-blue:    #074365;
+$spray:        #86eee7; // wtf no longer in the palette?
+$new-new-blue: #afd4c7;
 $aquamarine:   #68dfde;
 $scooter:      #25c9dc;
 $java:         #1bb6d6;
 $java-2:       #1bdfdf;
 $java-dark:    #21cbca;
-$java-darkest: #28b7b5;
+$java-darkest: #28b7b5; // wtf no longer in the palette?
 $cerulean:     #03aad6;
 $allports:     #007799;
 $blue-elm:     #22938d;
 $genoa:        #186a70;
 $blue-tiber:   #093944;
+$mirage:       #111b25;
 
 // Various reds:
 $peach:       #eaccbb;
@@ -91,19 +97,8 @@ $red:         #a01604;
 $dark-copper: #7a1805;
 $maroon:      #3f0901;
 
-
 // Other defined colors we need to convert:
 $blue:            #2980b9;
-$med-blue:        #0A3351;
-$dark-blue:       #152431;
-$purple:          #200721;
-$active:          #aed4c7;
-$blue-bg-anchor:  #30a7af;
-$blue-bg:         #03484f;
-$blue-btn-border: #064364; // Duplicate
-$blue-heading:    #004950;
-$blue-text:       #12757B;
-$border-color:    #07403a;
 
 
 /**
