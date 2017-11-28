@@ -81,15 +81,6 @@ Stylesheet: Button Styles
   background: $gp-green-80;
   color: $white;
 }
-.btn-blue {
-  background: $blue-btn;
-  border: solid 1px $blue-btn-border;
-  color: $blue-btn-border;
-}
-.btn-blue:hover {
-  background-color: $blue-btn-border;
-  color: $white;
-}
 
 .styled-select {
   select {
@@ -156,14 +147,6 @@ Stylesheet: Button Styles
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
-}
-.btn-light-blue {
-  background: #D9F0F6;
-  color: $blue-tiber;
-  border: 1px solid $blue-tiber;
-  &:hover {
-    background: #B2E1ED;
-  }
 }
 
 // Small devices (landscape phones, 576px and up)

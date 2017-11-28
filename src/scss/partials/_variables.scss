@@ -73,17 +73,16 @@ $sea-green:         #26774e;
 
 // Various blues:
 $dark-blue:    #074365;
-$spray:        #86eee7; // wtf no longer in the palette?
 $body-blue:    #afd4c7;
 $aquamarine:   #68dfde;
 $scooter:      #25c9dc;
 $java:         #1bb6d6;
 $java-2:       #1bdfdf;
 $java-dark:    #21cbca;
-$java-darkest: #28b7b5; // wtf no longer in the palette?
 $cerulean:     #03aad6;
 $allports:     #007799;
 $blue-elm:     #22938d;
+$faded-jade:   #418482;
 $genoa:        #186a70;
 $blue-tiber:   #093944;
 $mirage:       #111b25;
@@ -97,14 +96,14 @@ $red:         #a01604;
 $dark-copper: #7a1805;
 $maroon:      #3f0901;
 
-// Other defined colors we need to convert:
-$blue:            #2980b9;
-
+// Need to be re-assigned colors.
+$blue:     #2980b9;
+$brown-bg: #FAF7EC;
+$spray:    #86eee7;
 
 /**
  * From this point on only the above color variables should be used in the codebase.
  */
-
 
 // Used variables
 $active:                $green-20;
@@ -117,7 +116,7 @@ $blue-text:             $genoa;
 $body-bg:               $body-blue;
 $brown-bg-tags-text:    $yellow;
 $carousel-active:       $dark-blue;
-$header-footer-bg:      $black;
+$header-footer-bg:      $green;
 $nav-link:              $inch-worm;
 $percentage-text:       $genoa;
 $primary-button:        $orange;
@@ -125,17 +124,6 @@ $primary-button-hover:  $orange-hover;
 $secondary-button:      $spray;
 $secondary-button-hover:$spray;
 $top-nav:               $blue-tiber;
-
-
-// Need to be re-assigned colors.
-$border-color:          #07403a;
-$brown-bg:              #FAF7EC;
-$fixed-nav-bg:          #247670;
-$light-blue-bg:         #D6E6F2;
-
-
-// Used once.
-$blue-btn:              #0EC2DE;
 
 // Media queries
 $small-width: 575px;

@@ -19,7 +19,7 @@
       text-align: left;
       z-index: 500;
       top: 0;
-      background: $fixed-nav-bg;
+      background: $blue-tiber;
       opacity: 0.95;
       padding: 5px 0;
       h1 {
@@ -509,7 +509,7 @@
   }
   .sub-navigation-md {
     width: 100%;
-    background: $fixed-nav-bg;
+    background: $blue-tiber;
     opacity: 0.8;
     text-align: center;
     padding: 12px 0;
@@ -521,7 +521,7 @@
       float: left;
       line-height: 38px;
       &:first-child {
-        border-right: solid 2px $border-color;
+        border-right: solid 2px $dark-blue;
       }
       a {
         color: $white;

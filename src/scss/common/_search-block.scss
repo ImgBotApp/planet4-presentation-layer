@@ -118,14 +118,14 @@
       .filteritem {
         a {
           display: block;
-          border: 1px solid #6E98BB;
+          border: 1px solid $faded-jade;
           border-top: 0;
           border-bottom-width: 4px;
           padding: 11px 30px;
           text-transform: uppercase;
           text-decoration: none;
           font-size: rem(20);
-          color: $header-footer-bg;
+          color: $black;
           font-weight: bold;
           margin-bottom: 32px;
           position: relative;
@@ -275,7 +275,7 @@
           font-size: rem(22);
           padding: 0 10px;
           border-radius: 6px;
-          border-color: #6E98BB;
+          border-color: $faded-jade;
           background: $grey-20;
         }
         div {
@@ -371,7 +371,7 @@
               .action-btn {
                 height: 56px;
                 line-height: 56px;
-                border: 1px solid $header-footer-bg;
+                border: 1px solid $black;
                 text-transform: uppercase;
                 cursor: pointer;
                 i {
@@ -540,7 +540,7 @@
         }
         .filteritem {
           a {
-            border: 1px solid #6E98BB;
+            border: 1px solid $faded-jade;
             border-top: 0;
             border-bottom-width: 4px;
             padding: 11px 30px;
@@ -694,7 +694,7 @@
               .action-btn {
                 height: 56px;
                 line-height: 56px;
-                border: 1px solid $header-footer-bg;
+                border: 1px solid $black;
                 text-transform: uppercase;
                 cursor: pointer;
                 i {
@@ -861,7 +861,7 @@
         }
         .filteritem {
           a {
-            border: 1px solid #6E98BB;
+            border: 1px solid $faded-jade;
             border-top: 0;
             border-bottom-width: 4px;
             padding: 13px 30px;
@@ -1017,7 +1017,7 @@
         }
         .filteritem {
           a {
-            border: 1px solid #6E98BB;
+            border: 1px solid $faded-jade;
             border-top: 0;
             border-bottom-width: 4px;
             padding: 13px 30px;
@@ -1142,7 +1142,7 @@
         }
         .filteritem {
           a {
-            border: 1px solid #6E98BB;
+            border: 1px solid $faded-jade;
             border-top: 0;
             border-bottom-width: 4px;
             padding: 11px 30px;
