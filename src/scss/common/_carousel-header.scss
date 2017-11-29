@@ -25,7 +25,7 @@
         }
         h3 {
           font-size: rem(22);
-          line-height: 30px;
+          line-height: 1.2;
           font-weight: 400;
           width: 55%;
           color: $grey;
@@ -40,6 +40,8 @@
         .action-button {
           .btn {
             font-weight: 700;
+            -webkit-box-shadow: 0 2px 5px $shadow-color;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+            -moz-box-shadow:    0 2px 5px $shadow-color;  /* Firefox 3.5 - 3.6 */
             box-shadow:         0 2px 5px $shadow-color;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
           }
         }
@@ -141,7 +143,7 @@
           }
           h3 {
             font-size: rem(22);
-            line-height: 35px;
+            line-height: 1.2;
             width: 50%;
           }
           p {
@@ -206,7 +208,7 @@
           h3 {
             font-size: rem(24);
             margin-bottom: 34px;
-            line-height: 35px;
+            line-height: 1.2;
             width: 50%;
           }
           p {
@@ -272,7 +274,7 @@
           h3 {
             font-size: rem(44);
             margin-bottom: 40px;
-            line-height: 3.3rem;
+            line-height: 1.2;
             width: 50%;
           }
           p {
@@ -341,7 +343,7 @@
           h3 {
             font-size: rem(44);
             margin-bottom: 40px;
-            line-height: 3.3rem;
+            line-height: 1.2;
             width: 50%;
           }
           p {

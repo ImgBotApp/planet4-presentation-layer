@@ -1,4 +1,3 @@
-
 .mobile-header-wrap {
   padding: 10px 15px;
   .search-link {
@@ -90,23 +89,25 @@
     opacity: 0.8;
     position: relative;
     .navbar-brand {
-      padding: 0;
+      padding: 0 11px 0 15px;
       margin: 0;
     }
     .navbar {
       padding: 0;
       width: 100%;
       li {
-        width: 16.66%;
-        text-align: center;
+        width: 20%;
+        text-align: left;
         position: relative;
         line-height: 22px;
         padding: 11px 0;
         margin-top: 0;
+        margin-right: 15px;
         &.big-screen-nav-link {
+          text-align: center;
           &:hover {
             transition: 0.5s;
-            border-bottom: 3px solid $white;
+            border-bottom: 2px solid $white;
             a {
               color: $white;
               text-decoration: none;
@@ -160,7 +161,6 @@
           }
         &.nav-search-wrap {
           width: 30%;
-          margin-left: 20px;
           color: $search-text-colour;
           input::-webkit-input-placeholder {
             color: $search-text-colour;
@@ -171,7 +171,12 @@
             position: absolute;
             top: 18px;
             right: 15px;
-            font-size: 20px;
+            font-size: 20px; 
+            i {
+              vertical-align: middle;
+              font-size: 1.3rem;
+              margin-right: -10px;
+            }
           }
           .form-control {
             border-radius: 0;
@@ -179,7 +184,7 @@
           }
         }
         &.active-li {
-          background-color: $blue-bg;
+          background-color: $hover-nav;
           .country-select-dropdown {
             & > span:after {
               -ms-transform: rotate(180deg); /* IE 9 */
@@ -190,6 +195,7 @@
         }
       }
       .country-select-dropdown {
+        padding-left: 15px;
         position: relative;
         & > span:after {
           content: "";
@@ -209,6 +215,7 @@
           display: block;
           position: relative;
           padding-right: 24px;
+          cursor: pointer;
         }
       }
       .country-select-box {
@@ -220,7 +227,7 @@
         margin-top: 13px;
         background: $blue-bg;
         padding: 20px 20px 20px 70px;
-        margin-left: -100%;
+        margin-left: -65%;
         .country-selection-option {
           height: 350px;
           overflow-y: scroll;
@@ -293,16 +300,15 @@
         }
       }
     }
+    .pr-15 {
+      padding-right: 15px;
+    }
+    .pl-15 {
+      padding-left: 15px;
+    }
   }
 }
 
-.brown-bg {
-  #header {
-    &.top-navigation {
-      background: $header-footer-bg;
-    }    
-  }  
-}
 
 .fixedElement {
   &.fixed {
@@ -316,6 +322,132 @@
   .fa {
     color: #66CB00;
   }
+}
+
+// Small devices (landscape phones, 576px and up)
+@include mobile-only {
+  // #header {
+  //   .navbar-brand {
+  //     img {
+  //       width: 100%;
+  //     }
+  //   }
+  //   &.top-navigation {
+  //     position: fixed;
+  //     transition: top 0.2s ease-in-out;
+  //     top: 0;
+  //     &.nav-up {
+  //       top: -60px;
+  //     }
+  //     .navbar {
+  //       .country-select-box {
+  //         width: 300px;
+  //         padding: 10px 20px 0 35px;
+  //         margin-left: 0;
+  //         .country-selection-option {
+  //           height: 400px;
+  //           .country-option-box {            
+  //             .country-list {
+  //               height: auto;
+  //               ul {
+  //                 width: 100%;
+  //               }
+  //             }
+  //           }
+  //         }
+  //       }
+  //       li {
+  //         text-align: left;
+  //         border-bottom: solid 1px $border-color;
+  //         padding: 10px 0 10px 15px;
+  //         width: auto;
+  //         &.loginSignUpWrap {
+  //           i {
+  //             margin-right: 10px;
+  //           }
+  //         }
+  //         &.nav-search-wrap {
+  //           width: 100%;
+  //         }
+  //         &.active {
+  //           border-left: solid 5px $black;
+  //         }
+  //         .styled-select {
+  //           margin-top: 0;
+  //         }
+  //         &.active-li {
+  //           background-color: transparent;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // .navbar-light {
+  //   width: 100%;
+  //   .navbar-toggler {
+  //     height: auto;
+  //     padding: 10px 20px;
+  //     background: #F2A781;
+  //     color: $white;
+  //     font-size: rem(14);
+  //     text-transform: uppercase;
+  //   }
+  //   .navbar-nav {
+  //     margin-top: 15px;
+  //   }
+  //   .mobile-header-wrap {
+  //     text-align: center;
+  //   }
+  // }
+  
+
+  // .mobile-search-wrap {
+  //   .fa {
+  //     color: #66CB00;
+  //   }
+  //   .mobile-search-input {
+  //     display: block;
+  //     width: 88%;
+  //     border: 0;
+  //     outline: none;
+  //     padding: 0;
+  //     font-size: rem(14);
+  //     font-weight: bold;
+  //     color: #676767;
+  //   }
+
+  //   #searchsubmit {
+  //     display: block;
+  //     float: right;
+  //     background: none;
+  //     color: #717171;
+  //     border: 0;
+  //     outline: none;
+  //     cursor: pointer;
+  //     font-size: rem(15);
+  //   }
+  //   #searchbar {
+  //     display: none;
+  //     position: absolute;
+  //     left: 0;
+  //     top: 48px;
+  //     width: 100%;
+  //     padding: 10px 20px;
+  //     border-top: 1px solid #d8d8d8;
+  //     z-index: 9999;
+  //     background: #fff;
+  //     -webkit-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
+  //     -moz-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
+  //     box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
+  //   }
+  // }
+  // .mobile-search-wrap {
+  //   display: inline-block;
+  // }
+  // }
+  // .mobile-search-wrap {
+  //   display: inline-block;
+  // }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -404,6 +536,8 @@
       border-top: 1px solid #d8d8d8;
       z-index: 9999;
       background: $white;
+      -webkit-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
+      -moz-box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
       box-shadow: -1px 2px 2px rgba(0,0,0,0.2);
     }
   }
@@ -414,7 +548,7 @@
   #header.top-navigation {
     .navbar {
       li {
-        width: 25%;
+        width: 28%;
         a {
           font-size: rem(18);
         }
@@ -441,7 +575,7 @@
     padding: 0;
     top: 0;
     .navbar-brand {
-      padding: 0;
+      padding: 0 25px 0 15px;
       margin: 0;
     }
     .navbar {
