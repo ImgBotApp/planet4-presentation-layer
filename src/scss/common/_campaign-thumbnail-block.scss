@@ -1,40 +1,54 @@
+/*
+ * Campaign Thumbnail Block 
+ */
+
 .campaign-thumbnail-block {
-  margin-top: 72px;
-  h2 {
-    font-size: rem(32);
-    margin-bottom: 48px;
-  }
-  .thumbnail-largeview-container {
-    .thumbnail-large {
-      margin-bottom: 30px;
-      position: relative;
-      @include background-before-opacity(rgba(22,22,22,0.65));
-      &:hover {
-       &:before {
-        opacity:0.1;
-       }
-      }
-      img {
-        width: 100%;
-        min-height: 260px;
-        object-fit: cover;
-      }
-      a {
-        text-align: center;
-        font-size: rem(20);
-        color: $yellow-button;
-        font-weight: bold;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        z-index: 2;
-        margin-bottom: 40px;
-        text-shadow: 1px 1px $black;
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-  }
+	background-color: $light-grey;
+	margin-top: 72px;
+	margin-bottom: 6rem;
+	padding-top: 6rem;
+	
+	h2 {
+		font-size: rem(38);
+		margin-bottom: 48px;
+	}
+
+	.thumbnail-largeview-container {
+		
+		.thumbnail-large {
+			margin-bottom: 30px;
+			position: relative;
+			@include background-before-opacity(rgba(22,22,22,0.65));
+		
+			&:hover {
+				
+				&:before {
+					opacity:0.1;
+				}
+			}
+
+			img {
+				width: 100%;
+				min-height: 260px;
+				object-fit: cover;
+			}
+
+			a {
+				text-align: center;
+				font-size: rem(20);
+				color: $yellow;
+				font-weight: bold;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				z-index: 2;
+				margin-bottom: 40px;
+				text-shadow: 1px 1px $black;
+				&:hover {
+				  text-decoration: none;
+				}
+		  	}
+		}
+	}
 }

@@ -74,18 +74,14 @@ TRANSITION
   }
 }
 
-/*********************
-CSS3 GRADIENTS
-*********************/
-
-/* @include css-gradient(#dfdfdf,#f8f8f8); */
-@mixin css-gradient($from: #dfdfdf, $to: #f8f8f8) {
-  background-color: $to;
-  background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
-  background-image: -webkit-linear-gradient(top, $from, $to);
-  background-image: -moz-linear-gradient(top, $from, $to);
-  background-image: -o-linear-gradient(top, $from, $to);
-  background-image: linear-gradient(to bottom, $from, $to);
+/**
+ * Build a linear gradient with a direction and any number of color stops.
+ */
+@mixin linear-gradient( $direction, $color-stops... ) {
+  background: nth(nth($color-stops, 1), 1); /* Old browsers */
+  background: -moz-linear-gradient(legacy-direction($direction), $color-stops); /* FF3.6-15 */
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient($direction, $color-stops); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 @mixin clearfix() {
@@ -98,7 +94,7 @@ CSS3 GRADIENTS
 
 @mixin background-before-opacity($color) {
   &:before {
-    content: " ";
+    content: "";
     background: ($color);
     position: absolute;
     left: 0;
