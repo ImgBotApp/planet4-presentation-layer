@@ -1,65 +1,8 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> home_page_2
-.split-three-column { 
-  margin-top: 104px;
-  .three-column-box { 
-    .three-column-info { 
-       h2 { 
-         font-size: rem(40);
-         margin-bottom: 64px; 
-         font-weight: bold;
-       } 
-       p { 
-         font-size: rem(22);
-         line-height: 2.25rem; 
-         margin-bottom: 0;
-       } 
-     } 
-     .three-column-images { 
-       overflow: hidden; 
-       min-height: 430px; 
-       position: relative;
-     } 
-     .split-image { 
-        position: absolute;
-     } 
-     .first-column {
-      img {
-      }    
-     } 
-     .second-column { 
-        -webkit-transform: skew(25deg); 
-        -moz-transform: skew(25deg); 
-        -o-transform: skew(25deg); 
-        border-left: 10px solid $brown-bg; 
-        border-right: 10px solid $brown-bg;
-        z-index: 2;
-        width: 100%;
-        left: 0;
-        top: 0;
-        overflow: hidden;
-      img {
-        -webkit-transform: skew(-25deg); 
-        -moz-transform: skew(-25deg); 
-        -o-transform: skew(-25deg); 
-        margin-left: -150px;
-      }   
-     } 
-     .third-column { 
-      right: -165px;
-      img {
-      }   
-     } 
-   }
-}
-=======
 /* 
  * Content Three Column
  */
 
-.split-three-column { 
+ .split-three-column { 
 	margin-top: 48px;
 	
 	.three-column-box { 
@@ -91,7 +34,6 @@
 				height: 184px;
 			}
 		}
->>>>>>> master
 
 		.first-column {
 			margin-left: -50px;

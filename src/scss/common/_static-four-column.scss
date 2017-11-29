@@ -1,406 +1,199 @@
-.four-coloum {
-<<<<<<< HEAD
-  padding-top: 59px;
-  padding-bottom: 59px;
-  h2 {
-    font-size: rem(30);
-    color: $four-column-heading;
-    line-height: 36px;
-    text-align: center;
-    margin-bottom: 45px;
-    font-weight: bold;
-  }
-  .four-coloum-wrap{
-    .four-coloum-symbol {
-      text-align: center;
-      margin-bottom: 16px;
-    }
-    .four-coloum-info {
-      h5 {
-        text-align: center;
-        font-size : rem(20);
-        line-height : normal;
-        font-weight: bold;
-        color : $four-column-heading;
-        margin-bottom: 17px;
-      }
-      p, a{
-        font-size: rem(15);
-        line-height: 25px;
-      }
-      p {
-        color: $dark-shade-black;
-      }
-      a {
-        text-decoration: none;
-        margin-top: 30px;
-        display: block;
-        color: $four-column-heading;
-      } 
-      a:hover {
-        text-decoration: underline; 
-      }
-      .blue-button { 
-        width: 100%; 
-      }
-      .four-coloum-information {
-        float: left;
-        min-height: 230px;
-      }
-    }
-  }
-}
+/* 
+ * Content 4 column is the here
+ */
 
-@include small-and-up {
-  .four-coloum {
-    padding-top: 59px;
-    padding-bottom: 59px;
+ .four-coloum {
+  
     h2 {
       font-size: rem(30);
+      color: $steps-deactive-text;
       line-height: 36px;
       text-align: center;
-      margin-bottom: 45px;
+      margin: 80px 0;
     }
-    .four-coloum-wrap{
+  
+    .four-coloum-wrap {
+      
       .four-coloum-symbol {
         text-align: center;
         margin-bottom: 16px;
       }
+  
       .four-coloum-info {
+  
         h5 {
           text-align: center;
-          font-size : rem(20);
+          font-size : 22px;
           line-height : normal;
-          margin-bottom: 17px;
+          font-weight: 500;
+          color : $steps-deactive-text;
+          margin-bottom: 24px;
         }
-        p, a{
+  
+        p, 
+        a {
+          color: $blue-text;
           font-size: rem(15);
           line-height: 25px;
         }
-        a {
-          font-size: rem(15);
-          margin-top: 30px;
+  
+        a { 
+          text-decoration: underline; 
         }
+  
         .blue-button { 
           width: 100%; 
         }
+  
         .four-coloum-information {
           float: left;
           min-height: 230px;
         }
+  
       }
     }
   }
-}
-
-// Medium devices (tablets, 768px and up)
-@include medium-and-up {
-  .four-coloum {
-    padding-top: 52px;
-    padding-bottom: 0;
-    h2{
-      text-align: center; 
-      font-size: rem(43);
-      line-height: 53px;
-      margin-top: 0;
-      margin-bottom: 57px;
+  
+  @include small-and-up {
+    
+    .four-coloum {
+      
+      h2 {
+        text-align: center; 
+        font-size: rem(29);
       }
-      .four-coloum-wrap{
-        margin-bottom: 74px;
-        .four-coloum-symbol{
+      
+      .four-coloum-wrap {
+        .four-coloum-symbol {
           text-align: left;
-          margin-bottom: 40px;
-          margin-left: -24px;
         }
+  
+        .four-coloum-info {  
+          
+          h5 {
+            text-align: center;
+          }
+  
+          .four-coloum-information {
+            min-height: 320px;
+          }
+        }
+      }
+    }
+  }  
+  
+  // Medium devices (tablets, 768px and up)
+  @include medium-and-up {
+  
+    .four-coloum {
+      
+      h2 {
+        text-align: center; 
+        font-size: rem(43);
+        line-height: 53px;
+        margin-top: 104px;
+        margin-bottom: 104px;
+      }
+  
+      .four-coloum-wrap {
+        margin-bottom: 80px;
+        
+        .four-coloum-symbol {
+          text-align: left;
+          margin-bottom: 32px;
+        }
+  
         .four-coloum-info{  
+  
           h5 {
             text-align: left;
-            margin-bottom: 22px;
-            font-size : rem(22);
+            margin-bottom: 40px;
           }
+          
           p {
-            margin-bottom: 28px;
-            font-size: rem(16);
+            margin-bottom: 24px;
           }
-          a {
-            font-size: rem(16);
+        
+          .four-coloum-information {
+            min-height: 220px;
           }
-        .four-coloum-information {
-          min-height: 220px;
-        }
+    
+          }
       }
-    }
+      }
   }
-=======
-
-	h2 {
-		font-size: rem(30);
-		color: $steps-deactive-text;
-		line-height: 36px;
-		text-align: center;
-		margin: 80px 0;
-	}
-
-	.four-coloum-wrap {
-		
-		.four-coloum-symbol {
-			text-align: center;
-			margin-bottom: 16px;
-		}
-
-		.four-coloum-info {
-
-			h5 {
-				text-align: center;
-				font-size : 22px;
-				line-height : normal;
-				font-weight: 500;
-				color : $steps-deactive-text;
-				margin-bottom: 24px;
-			}
-
-			p, 
-			a {
-				color: $blue-text;
-				font-size: rem(15);
-				line-height: 25px;
-			}
-
-			a { 
-				text-decoration: underline; 
-			}
-
-			.blue-button { 
-				width: 100%; 
-			}
-
-			.four-coloum-information {
-				float: left;
-				min-height: 230px;
-			}
-
-		}
-	}
-}
-
-@include small-and-up {
-	
-	.four-coloum {
-		
-		h2 {
-			text-align: center; 
-			font-size: rem(29);
-		}
-		
-		.four-coloum-wrap {
-			.four-coloum-symbol {
-				text-align: left;
-			}
-
-			.four-coloum-info {  
-				
-				h5 {
-					text-align: center;
-				}
-
-				.four-coloum-information {
-					min-height: 320px;
-				}
-			}
-		}
-	}
-}  
-
-// Medium devices (tablets, 768px and up)
-@include medium-and-up {
-
-	.four-coloum {
-		
-		h2 {
-			text-align: center; 
-			font-size: rem(43);
-			line-height: 53px;
-			margin-top: 104px;
-			margin-bottom: 104px;
-		}
-
-		.four-coloum-wrap {
-			margin-bottom: 80px;
-			
-			.four-coloum-symbol {
-				text-align: left;
-				margin-bottom: 32px;
-			}
-
-			.four-coloum-info{  
-
-				h5 {
-					text-align: left;
-					margin-bottom: 40px;
-				}
-				
-				p {
-					margin-bottom: 24px;
-				}
-			
-				.four-coloum-information {
-					min-height: 220px;
-				}
-	
-	  		}
-		}
-  	}
->>>>>>> master
-}
-
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
-<<<<<<< HEAD
-  .four-coloum {
-    padding-top: 84px;
-    padding-bottom: 0;
-    h2{
-      text-align: left; 
-      font-size: rem(48);
-      line-height: 56px;
-      margin-top: 0;
-      margin-bottom: 57px;
+  
+  // Large devices (desktops, 992px and up)
+  @include medium-large-and-up {
+  
+    .four-coloum {
+    
+      h2 {
+        text-align: left; 
+        font-size: rem(48);
+        line-height: 56px;
+        margin-top: 104px;
+        margin-bottom: 160px;
       }
-      .four-coloum-wrap{
-        margin-bottom: 86px;
-        .four-coloum-symbol{
+  
+      .four-coloum-wrap {
+        
+        .four-coloum-symbol {
           text-align: left;
-          margin-bottom: 46px;
-          margin-left: -24px;
-        }
-        .four-coloum-info{  
-         h5 {
-          text-align: left;
-          margin-bottom: 27px;
-          font-size: rem(24);
-         }
-         p {
           margin-bottom: 32px;
-          font-size: rem(17);
-         } 
-         a {
-          font-size: rem(17);
-         }
-        .four-coloum-information {
-          min-height: 220px;
         }
+  
+        .four-coloum-info {
+          
+          h5 {
+            text-align: left;
+              margin-bottom: 16px;
+            }
+  
+            p {
+              margin-bottom: 24px;
+            }
+  
+          .four-coloum-information {
+            min-height: 220px;
+          }
+          }
       }
     }
   }
-=======
-
-	.four-coloum {
-	
-		h2 {
-			text-align: left; 
-			font-size: rem(48);
-			line-height: 56px;
-			margin-top: 104px;
-			margin-bottom: 160px;
-		}
-
-		.four-coloum-wrap {
-			
-			.four-coloum-symbol {
-				text-align: left;
-				margin-bottom: 32px;
-			}
-
-			.four-coloum-info {
-				
-				h5 {
-					text-align: left;
-		  			margin-bottom: 16px;
-		  		}
-
-		  		p {
-		  			margin-bottom: 24px;
-		  		}
-
-				.four-coloum-information {
-					min-height: 220px;
-				}
-		  	}
-		}
-	}
->>>>>>> master
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@include large-large-and-up {
-<<<<<<< HEAD
-  .four-coloum {
-    padding-top: 105px;
-    h2{
-      text-align: left; 
-      font-size: rem(56);
-      line-height: 68px;
-      margin-top: 0;
-      margin-bottom: 80px;
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @include large-large-and-up {
+    .four-coloum {
+      h2 {
+        text-align: left; 
+        font-size: rem(56);
+        line-height: 68px;
+        margin-top: 104px;
+        margin-bottom: 80px;
       }
-      .four-coloum-wrap{
-        margin-bottom: 104px;
-        .four-coloum-symbol{
+  
+      .four-coloum-wrap {
+        
+        .four-coloum-symbol {
           text-align: left;
           margin-bottom: 56px;
-          margin-left: -24px;
         }
-        .four-coloum-info{  
-         h5 {
-          text-align: left;
-          margin-bottom: 32px;
-          font-size: rem(26);
-         }
-         p {
-          margin-bottom: 48px;
-          font-size: rem(17);
-         }
-         a {
-           font-size: rem(17);
-         }
-        .four-coloum-information {
-          min-height: 220px;
+  
+        .four-coloum-info {  
+          h5 {
+            text-align: left;
+            margin-bottom: 32px;
+          }
+  
+          p {
+            margin-bottom: 48px;
+          }
+  
+          .four-coloum-information {
+            min-height: 220px;
+          }
         }
       }
     }
   }
-=======
-	.four-coloum {
-		h2 {
-			text-align: left; 
-			font-size: rem(56);
-			line-height: 68px;
-			margin-top: 104px;
-			margin-bottom: 80px;
-		}
-
-		.four-coloum-wrap {
-			
-			.four-coloum-symbol {
-				text-align: left;
-				margin-bottom: 56px;
-			}
-
-			.four-coloum-info {  
-				h5 {
-					text-align: left;
-					margin-bottom: 32px;
-				}
-
-				p {
-					margin-bottom: 48px;
-				}
-
-				.four-coloum-information {
-					min-height: 220px;
-				}
-			}
-		}
-	}
->>>>>>> master
-}
