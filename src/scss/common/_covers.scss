@@ -1,107 +1,81 @@
-.covers-block {
-  .cover-card {
-    min-height: 440px;
-    padding: 32px 15px;
-    margin-bottom: 32px;
-    position: relative;
-    &:hover {
-     @include background-before-opacity(#385924);
-     .cover-card-btn {
-     background: $primary-button;
-     border-color: $primary-button;
-     }
-     p {
-      display: block;
-     }
-    }
-    // &.card-one {
-     @include background('images/covers-card-one.png');
-    // }
-    // &.card-two {
-    //  @include background('images/covers-card-two.png');
-    // }
-    // &.card-three {
-    //  @include background('images/covers-card-three.png');
-    // }
-    .cover-card-btn {
-     background: transparent;
-     color: $white;
-     border-color: $white;
-     padding: 10px;
-     position: absolute;
-     bottom: 0;
-     margin: 15px 0;
-     width: 91.43%;
-    }
-    &.dark-card-bg {
-     color: $white;
-    }
+.cover-card {
+  min-height: 440px;
+  flex-basis: 100%;
+  padding: 32px 15px 60px;
+  margin-bottom: 32px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,.35);
+  background-size: cover;
+  background-position: center;
+  &:before {
+    content: "";
+    opacity: 0;
+    transition: opacity 100ms linear;
+  }
+  &:hover {
+    @include background-before-opacity($green-80);
+    box-shadow: 0 0 10px transparentize($black, .5);
     h2 {
-     font-size: rem(28);
-     margin-bottom: 32px;
-     position: relative;
+      color: $white
     }
     p {
-     font-size: rem(20);
-     line-height: 2rem;
-     color: $white;
-     position: relative;
-     display: none;
+      opacity: 1;
+      visibility: visible;
     }
-    .cover-card-tag {
-     color: $brown-bg-tags-text;
-     display: inline-block;
-     margin-bottom: 8px;
-     position: relative;
-     text-decoration: none;
+    .cover-card-btn {
+      background-color: $primary-button;
+      border-color: $primary-button;
     }
+  }
+  &.dark-card-bg {
+    color: $white;
+  }
+  & > * {
+    position: relative;
+  }
+  h2 {
+    font-size: rem(28);
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 32px;
+    max-width: 80%;
+    transition: color 100ms linear;
+  } 
+  p {
+    font-size: rem(20);
+    font-weight: 300;
+    line-height: 1.6;
+    color: $white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 150ms linear;
+  }
+  @include large-and-up {
+    box-shadow: none;
+    transition: box-shadow 150ms linear;
+    padding-bottom: 70px;
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@include mobile-only {
-  .covers-block {
-    .cover-card {
-     .cover-card-btn.btn-transparent {
-      width: 89.66%;
-     }
-   }
-  }   
-}
-
-// Medium devices (tablets, 768px and up)
-@include medium-and-up {
-  .covers-block {
-    .cover-card {
-      .cover-card-btn {
-      width: 90.91%;
-      }
-    }
-  }   
-}
-
-// Large devices (desktops, 992px and up)
-@include medium-large-and-up {
-  .covers-block {
-    .cover-card {
-      .cover-card-btn {
-       width: 89.66%;
-      }
-    }
-  }   
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@include large-large-and-up {
-  .covers-block {
-    .cover-card {
-      min-height: 440px;
-      padding: 32px 15px;
-      margin-bottom: 32px;
-      position: relative;
-      .cover-card-btn {
-       width: 91.43%;
-      }
-    }
+.cover-card-tag {
+  color: $brown-bg-tags-text;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 8px;
+  text-decoration: none;
+  &:hover {
+    color: $yellow;
   }
+}
+
+.cover-card-btn {
+  background: transparentize($white, .8);
+  color: $white;
+  border-color: $white;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  margin: 15px 0;
+  width: 90%;
+  cursor: pointer;
 }

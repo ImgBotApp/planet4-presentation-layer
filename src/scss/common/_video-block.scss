@@ -1,67 +1,61 @@
 .video-block {
-  padding-top: 104px;
-  h1 {
-    font-size: rem(40);
-    margin-bottom: 64px;
-  }
+	padding-top: 80px;
+
+	h2 {
+		font-size: 2.375rem;
+		margin-bottom: 40px;
+	}
 }
 
 
-// Small devices (landscape phones, 576px and up)
-@include mobile-only {
-  .video-block {
-    padding-top: 72px;
-    h1 {
-      font-size: rem(26);
-      margin-bottom: 40px;
-    }
-    .video-section {
-      height: 240px;
-    }
-  }
+// Small devices ( 575px and up )
+@include small-and-up {
+	.video-block {
+
+		h2 {
+			font-size: rem(26);
+		}
+
+		.video-section {
+			height: 240px;
+		}
+	}
 }
 
 
 // Medium devices (tablets, 768px and up)
 @include medium-and-up {
-  .video-block {
-    padding-top: 104px;
-    h1 {
-      font-size: rem(34);
-      margin-bottom: 48px;
-    }
-    .video-section {
-      height: 400px;
-    }
-  }
+	.video-block {
+		h2 {
+			font-size: rem(38);
+		}
+		.video-section {
+			height: 400px;
+		}
+	}
 }
 
 
 // Large devices (desktops, 992px and up)
 @include medium-large-and-up {
-  .video-block {
-    padding-top: 88px;
-    h1 {
-      font-size: rem(34);
-      margin-bottom: 48px;
-    }
-    .video-section {
-      height: 530px;
-    }
-  }
+	.video-block {
+
+		.video-section {
+			height: 530px;
+		}
+	}
 }
 
 
 // Extra large devices (large desktops, 1200px and up)
 @include large-large-and-up {
-  .video-block {
-    padding-top: 104px;
-    h1 {
-      font-size: rem(40);
-      margin-bottom: 64px;
-    }
-    .video-section {
-      height: 630px;
-    }
-  }
+	.video-block {
+		h2 {	
+			font-size: rem(40);
+			margin-bottom: 64px;
+		}
+		.video-section {
+			height: 630px;
+		}
+	}
 }

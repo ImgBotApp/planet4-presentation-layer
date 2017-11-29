@@ -1,4 +1,5 @@
 .four-coloum {
+<<<<<<< HEAD
   padding-top: 59px;
   padding-bottom: 59px;
   h2 {
@@ -130,9 +131,131 @@
       }
     }
   }
+=======
+
+	h2 {
+		font-size: rem(30);
+		color: $steps-deactive-text;
+		line-height: 36px;
+		text-align: center;
+		margin: 80px 0;
+	}
+
+	.four-coloum-wrap {
+		
+		.four-coloum-symbol {
+			text-align: center;
+			margin-bottom: 16px;
+		}
+
+		.four-coloum-info {
+
+			h5 {
+				text-align: center;
+				font-size : 22px;
+				line-height : normal;
+				font-weight: 500;
+				color : $steps-deactive-text;
+				margin-bottom: 24px;
+			}
+
+			p, 
+			a {
+				color: $blue-text;
+				font-size: rem(15);
+				line-height: 25px;
+			}
+
+			a { 
+				text-decoration: underline; 
+			}
+
+			.blue-button { 
+				width: 100%; 
+			}
+
+			.four-coloum-information {
+				float: left;
+				min-height: 230px;
+			}
+
+		}
+	}
 }
+
+@include small-and-up {
+	
+	.four-coloum {
+		
+		h2 {
+			text-align: center; 
+			font-size: rem(29);
+		}
+		
+		.four-coloum-wrap {
+			.four-coloum-symbol {
+				text-align: left;
+			}
+
+			.four-coloum-info {  
+				
+				h5 {
+					text-align: center;
+				}
+
+				.four-coloum-information {
+					min-height: 320px;
+				}
+			}
+		}
+	}
+}  
+
+// Medium devices (tablets, 768px and up)
+@include medium-and-up {
+
+	.four-coloum {
+		
+		h2 {
+			text-align: center; 
+			font-size: rem(43);
+			line-height: 53px;
+			margin-top: 104px;
+			margin-bottom: 104px;
+		}
+
+		.four-coloum-wrap {
+			margin-bottom: 80px;
+			
+			.four-coloum-symbol {
+				text-align: left;
+				margin-bottom: 32px;
+			}
+
+			.four-coloum-info{  
+
+				h5 {
+					text-align: left;
+					margin-bottom: 40px;
+				}
+				
+				p {
+					margin-bottom: 24px;
+				}
+			
+				.four-coloum-information {
+					min-height: 220px;
+				}
+	
+	  		}
+		}
+  	}
+>>>>>>> master
+}
+
 // Large devices (desktops, 992px and up)
 @include medium-large-and-up {
+<<<<<<< HEAD
   .four-coloum {
     padding-top: 84px;
     padding-bottom: 0;
@@ -169,10 +292,48 @@
       }
     }
   }
+=======
+
+	.four-coloum {
+	
+		h2 {
+			text-align: left; 
+			font-size: rem(48);
+			line-height: 56px;
+			margin-top: 104px;
+			margin-bottom: 160px;
+		}
+
+		.four-coloum-wrap {
+			
+			.four-coloum-symbol {
+				text-align: left;
+				margin-bottom: 32px;
+			}
+
+			.four-coloum-info {
+				
+				h5 {
+					text-align: left;
+		  			margin-bottom: 16px;
+		  		}
+
+		  		p {
+		  			margin-bottom: 24px;
+		  		}
+
+				.four-coloum-information {
+					min-height: 220px;
+				}
+		  	}
+		}
+	}
+>>>>>>> master
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @include large-large-and-up {
+<<<<<<< HEAD
   .four-coloum {
     padding-top: 105px;
     h2{
@@ -208,4 +369,38 @@
       }
     }
   }
+=======
+	.four-coloum {
+		h2 {
+			text-align: left; 
+			font-size: rem(56);
+			line-height: 68px;
+			margin-top: 104px;
+			margin-bottom: 80px;
+		}
+
+		.four-coloum-wrap {
+			
+			.four-coloum-symbol {
+				text-align: left;
+				margin-bottom: 56px;
+			}
+
+			.four-coloum-info {  
+				h5 {
+					text-align: left;
+					margin-bottom: 32px;
+				}
+
+				p {
+					margin-bottom: 48px;
+				}
+
+				.four-coloum-information {
+					min-height: 220px;
+				}
+			}
+		}
+	}
+>>>>>>> master
 }
