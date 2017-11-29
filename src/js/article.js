@@ -4,3 +4,7 @@ $(function() {
     return false;
     });
 });
+
+$('.topicwise-article-image, .article-headline, .article-content').hover(function(){
+ $(this).parents('.topicwise-article-list-item').toggleClass('imghover');
+});

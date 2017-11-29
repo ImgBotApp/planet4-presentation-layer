@@ -171,7 +171,7 @@ Stylesheet: Button Styles
   font-family: $roboto;
 }
 .btn-light-blue {
-  background: #ADDBEA;
+  background: rgba(255,255,255,0.2);
   color: $blue-top-nav;
   border: 1px solid $blue-top-nav;
   &:hover {

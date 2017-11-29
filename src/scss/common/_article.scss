@@ -1,11 +1,11 @@
 .article {
   padding-top: 60px;
   h3 {
-    color: $article-heading-color;
     margin: 0;
     font-size: rem(26);
     font-weight: bold;
     color: $black;
+    line-height: 1.2;
   }
   .topicwise-article-section {
     .topicwise-article-list {
@@ -16,14 +16,14 @@
         width: 33.33%;
           img{
              width: 100%; 
-             padding-right: 0;
+             padding-right: 0; 
           }
         }
         .topicwise-article-body {
           a.article-headline {
             color: $black;
             font-size: rem(20);
-            font-weight: medium;
+            font-weight: 500;
             text-decoration: none;
             line-height: normal;
             &:hover {
@@ -70,7 +70,15 @@
           .article-content {
             color: $dark-shade-black;
           }
-        } 
+        }
+        &.imghover {
+          .topicwise-article-body {
+            a.article-headline, .article-content {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }  
+        }
       }
       .article-mobile-view {
         box-shadow: 0px 0px 20px 0px rgba(166,166,166,0.5);
@@ -160,10 +168,9 @@
   .article {
     padding-top: 79px;
     h3 {
-      color: $article-heading-color;
+      color: $black;
       margin: 0;
       font-size: rem(36);
-      line-height: 2.7rem;
     }
     .topicwise-article-section {
       .topicwise-article-list {
@@ -219,10 +226,9 @@
   .article {
     padding-top: 103px;
     h3 {
-      color: $article-heading-color;
+      color: $black;
       margin: 0;
       font-size: rem(38);
-      line-height: 2.7rem;
     }
     .topicwise-article-section {
       .topicwise-article-list {

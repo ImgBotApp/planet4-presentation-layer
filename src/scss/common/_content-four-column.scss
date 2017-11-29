@@ -1,89 +1,3 @@
- /*Block Four Column Content Start*/
-/*
-
-  <div class="four-coloum-content">
-    <div class="container">
-      <h2>Publications</h2>
-      <div class="row">
-          <div class="col-md-4 col-lg-3 col-xl-3">
-            <div class="four-coloum-content-wrap clearfix">
-              <div class="four-coloum-content-info">
-                <div class="four-coloum-content-symbol">
-                  <img src="images/four-column-content-one-img.png"> 
-                </div>
-                <div class="four-coloum-content-information hidden-xs-down">
-                  <h4>Sick of Too Many Cows </h4>
-                  <p class="publication-date">July 7 2017</p>
-                  <p>Read how intensive livestock farming could be endangering our health</p>
-                </div>
-                <!-- <div class="four-coloum-content-action mt-3">
-                  <a href="#">See what we stand for</a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3 col-xl-3">
-            <div class="four-coloum-content-wrap clearfix">
-              <div class="four-coloum-content-info">
-                <div class="four-coloum-content-symbol">
-                  <img src="images/four-column-content-two-img.png">
-                </div>
-                <div class="four-coloum-content-information hidden-xs-down">
-                  <h4>Sick of Too Many Cows </h4>
-                  <p class="publication-date">July 7 2017</p>
-                  <p>Read how intensive livestock farming could be endangering our health</p>
-                </div>
-                <!-- <div class="four-coloum-content-action mt-3">
-                  <a href="#">See what we stand for</a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3 col-xl-3">
-            <div class="four-coloum-content-wrap clearfix">
-              <div class="four-coloum-content-info">
-                <div class="four-coloum-content-symbol dark-img">
-                  <img src="images/four-column-content-three-img.png"> 
-                </div>
-                <div class="four-coloum-content-information hidden-xs-down">
-                  <h4>Sick of Too Many Cows </h4>
-                  <p class="publication-date">July 7 2017</p>
-                  <p>Read how intensive livestock farming could be endangering our health</p>
-                </div>
-                <!-- <div class="four-coloum-content-action mt-3">
-                  <a href="#">See what we stand for</a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3 col-xl-3">
-            <div class="four-coloum-content-wrap clearfix">
-              <div class="four-coloum-content-info">
-                <div class="four-coloum-content-symbol dark-img">
-                  <img src="images/four-column-content-four-img.png"> 
-                </div>
-                <div class="four-coloum-content-information hidden-xs-down">
-                  <h4>Sick of Too Many Cows </h4>
-                  <p class="publication-date">July 7 2017</p>
-                  <p>Read how intensive livestock farming could be endangering our health</p>
-                </div>
-                <!-- <div class="four-coloum-content-action mt-3">
-                  <a href="#">See what we stand for</a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-4 col-lg-3 col-xl-3 mb-5">
-          <a href="#" class="btn btn-block btn-medium btn-small btn-transparent">LOAD X MORE...</a>
-        </div>
-        </div>
-    </div>
-  </div>
-*/
- /*Block Four Column Content End */
-
 .four-coloum-content {
   color: $purple;
   padding: 104px 0 0 0;
@@ -96,6 +10,8 @@
     .four-coloum-content-symbol {
       position: relative;
       margin: 32px 0 32px 0;
+      -webkit-box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
+      -moz-box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
       box-shadow: 0px 5px 20px 0px rgba(184,184,184,0.5);
       img {
         width: 100%;
