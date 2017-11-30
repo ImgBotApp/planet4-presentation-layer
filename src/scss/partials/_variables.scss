@@ -23,8 +23,6 @@ $purple:    #200721;
 
 // Used colors
 $active:                #aed4c7;
-$article-anchor:		    #2B092C;
-$article-heading-color:	#152431;
 $blue-bg-anchor:        #30a7af;
 $blue-bg:               #03484f;
 $blue-btn-border:       #064364; // Duplicate
@@ -35,7 +33,6 @@ $brown-bg-tags-text:    $yellow;
 $brown-bg:              #FAF7EC;
 $card-header-bg:        #c7dcd3;
 $carr-arrow:            $med-blue;
-$credit-color:			    #5A5A5A;
 $darkb-blue-text:       #264042;
 $fixed-nav-bg:          #247670;
 $header-footer-bg:      #030403;
@@ -65,17 +62,10 @@ $container-bg:          #AFD4C7;
 $dark-para-text:        #011D1E;
 $green-link-hover:      #77dd11;
 $heading:               #004d53;
-$search-text-colour:    #115247;
 $secondary-button-bg:   #9fd0c8;
 $step-number-hover:     #42b3aa;
 $step-number:           #dc9509;
-$blue-top-nav:			    #074365;
-$dark-shade-black:		  #1a1a1a;
-$carousel-indi-color:	  #8BCC49;
-$shadow-color:			    #666666;
-$article-tag:			      #3290de;
-$four-column-heading:	  #186A70;
-$hover-nav:				      #052A30;
+
 
 // As-of-yet-unused.
 $blue-btn-hover:        #064364; // Duplicate
@@ -87,11 +77,27 @@ $heading-sub-text:      #007e7b;
 $light-blue-text:       #99CBCA;
 $light-border:          #bddac8;
 $red-text:              $red;
-$tag-color:				      #258CCB;
 $tags-text:             #007e7a;
 $tags:                  #326a69;
 
 $green-80:    #1b4a1b;
+$grey-20:     #ccc;
+$crimson:     #e51538;
+
+
+// Colors to be fixed/addressed:
+$article-anchor:        #2B092C;
+$article-heading-color:	#152431;
+$credit-color:          #5A5A5A;
+$search-text-colour:    #115247;
+$blue-top-nav:          #074365;
+$dark-shade-black:      #1a1a1a;
+$carousel-indi-color:   #8BCC49;
+$shadow-color:          #666666;
+$article-tag:           #3290de;
+$four-column-heading:   #186A70;
+$hover-nav:             #052A30;
+$tag-color:             #258CCB;
 
 // Media queries
 $small-width: 575px;

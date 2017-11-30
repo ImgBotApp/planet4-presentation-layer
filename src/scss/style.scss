@@ -39,14 +39,14 @@
 @import "common/campaign-thumbnail-block";
 @import "common/content-three-column";
 @import "common/comments-block";
-@import "common/author-block";
 @import "common/post-block";
 @import "common/boxout-block";
 @import "common/search-block";
 @import "common/cookie-block";
 @import "common/campaign-covers-4col-wrap";
 
-// Import pages and common responsiveness
+// Page-specific styles
+@import "pages/post/author-block";
 @import "pages/take-action"; // TODO: Break this down into blocks
 
 /* 
@@ -58,17 +58,12 @@
 
 body {
   overflow-x: hidden;
-  // background: $body-bg;
+  background: $body-bg;
   font-family: $roboto;
   &.brown-bg {
     background: $brown-bg;
   }
   &.home-page-bg {
-    // background: lightblue;
-    // background-image: repeating-linear-gradient(-60deg, transparent, transparent 2px, rgba(255,255,255,1) 425px, rgba(255,255,255,1) 450px);
-    // background-image: repeating-linear-gradient(-60deg, rgba(212, 236, 244, 0) 0%, rgba(197, 223, 239, 0.69) 66.42%, rgba(188, 215, 236, 1) 96.23%);
-    // background-image: repeating-linear-gradient(-60deg, transparent, transparent 2px, rgba(255,255,255,1) 966px, rgba(255,255,255,1) 450px);
-    // background-image: repeating-linear-gradient(-60deg, white, white 2px, transparent 966px, white 450px);
     background-image: repeating-linear-gradient(-61deg, rgba(212, 236, 244, 0) 0%, rgba(197, 223, 239, 0.69) 950px, rgba(188, 215, 236, 1) 952px);
   }
   // /* Gradient */
